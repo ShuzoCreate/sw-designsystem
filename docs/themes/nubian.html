@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nubian — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#E9DCC6; --t-panel:#F3C9A2; --t-ink:#3A1B33;
+  --t-soft:#5C6E32; --t-faint:#8C6659; --t-accent:#FF8A55;
+  --t-accent-ink:#111; --t-line:#D9A38A;
+  --t-rs:26px; --t-rl:26px;
+  --t-case:none; --t-track:.02em;
+  --t-disp:'Cormorant Garamond', 'EB Garamond', serif;
+  --t-mono:Jost, Futura, 'Avenir Next', sans-serif;
+  color-scheme:light;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 02 / 14</p>
+    <h1>Nubian</h1>
+    <p class="hook">銀河唯一のエレガント</p>
+  </div>
+  <div class="tdesc"><p>『ファントム・メナス』のナブー王室宇宙船（J-type 327 Nubian級）のコックピット計器。銀河で唯一のライト基調・エレガント様式で、手工芸品のように仕立てられたUI。名は劇中でこの船を指す呼称から。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/nubian.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/nubian.html" title="Nubian showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/nubian.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/nubian.html" loading="lazy" title="Nubian conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#E9DCC6;color:#111">#E9DCC6</div><div class="tok">shell</div></div><div class="chip-swatch"><div class="well" style="background:#D9A38A;color:#111">#D9A38A</div><div class="tok">blush</div></div><div class="chip-swatch"><div class="well" style="background:#F3C9A2;color:#111">#F3C9A2</div><div class="tok">ground</div></div><div class="chip-swatch"><div class="well" style="background:#FF8A55;color:#111">#FF8A55</div><div class="tok">coral</div></div><div class="chip-swatch"><div class="well" style="background:#E85C30;color:#fff">#E85C30</div><div class="tok">ember</div></div><div class="chip-swatch"><div class="well" style="background:#3A1B33;color:#fff">#3A1B33</div><div class="tok">plum</div></div><div class="chip-swatch"><div class="well" style="background:#8FA84E;color:#111">#8FA84E</div><div class="tok">sage</div></div><div class="chip-swatch"><div class="well" style="background:#9FC6E4;color:#111">#9FC6E4</div><div class="tok">sky</div></div><div class="chip-swatch"><div class="well" style="background:#B48AC8;color:#111">#B48AC8</div><div class="tok">violet</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>display</td><td>Cormorant Garamond</td><td>1.6rem / 500</td></tr><tr><td>label</td><td>Jost</td><td>0.72rem / 400</td></tr><tr><td>numeric</td><td>Jost</td><td>1rem / 300</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>full</td><td>999px</td></tr><tr><td>soft</td><td>20px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>xs</td><td>6px</td></tr><tr><td>sm</td><td>10px</td></tr><tr><td>md</td><td>16px</td></tr><tr><td>lg</td><td>28px</td></tr><tr><td>xl</td><td>44px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>Nubianは、ナブー王室のスターシップ（TPMのロイヤル・スターシップ、AOTCの王室クルーザー）に見られる計器様式である。名はクワイ＝ガンが劇中で船を呼んだ「J-type 327 Nubian」から — 船体設計・建造はシード王宮造船工廠、推進系はヌービア・スター・ドライブズで、「ヌビアン」は映画自身がこの船に与えた呼称である。銀河のスクリーンがほぼ例外なく「暗闇に光る線」であるなか、ナブーだけが<strong>明るい地に描く</strong>。クロームの船体と同じ思想 — 機能を隠さず装飾として磨き上げる — がUIにも貫かれ、量産品ではなく銀細工師が作った工芸品のように見える。</p>
+<p>大原則は <strong>「計器は宝飾、画面は陶磁」</strong>。スクリーンはクリーム地の陶板のようで、円形の計器がコーラル色の熱を帯びて発光し、緑の銘板が要所に打たれる。冷たい情報機器の気配を徹底的に排し、温かく、対称で、優雅であること。</p>
+<h2>Colors</h2>
+<p>パレットは「温かな地色3階調 ＋ 発光するコーラル ＋ 差し色3色」。</p>
+<ul>
+<li><strong>shell (#E9DCC6):</strong> 筐体・コンソールのクリーム。大面積の地。</li>
+<li><strong>blush (#D9A38A):</strong> 地色の影側。継ぎ目、トラック、非アクティブ。</li>
+<li><strong>ground (#F3C9A2):</strong> 計器盤面のピーチ。発光しているような温かい面。</li>
+<li><strong>coral (#FF8A55):</strong> この様式の「光」。計器の縁、リング、アクティブ要素。常に柔らかなハロー（グロー）を伴う。</li>
+<li><strong>ember (#E85C30):</strong> コーラルの濃色。ゲージの充填、重要セグメント、強調。</li>
+<li><strong>plum (#3A1B33):</strong> 唯一の暗色。スキーマティックや映像を映す小窓（viewport-inset）の奥。暗色は「窓の中」にのみ存在する。</li>
+<li><strong>sage (#8FA84E):</strong> 銘板・ラベルの緑。オーレベッシュの刻印用。</li>
+<li><strong>sky (#9FC6E4):</strong> 小窓内のワイヤーフレーム・映像のトーン。</li>
+<li><strong>violet (#B48AC8):</strong> 3D表示の透過体、装飾的アクセント。稀に。</li>
+</ul>
+<p>運用: shell/blush/ground で75%、coral/ember 15%、plum窓 5%、sage/sky/violet 5%。<strong>黒は存在しない</strong>。影すら茶系（blushを暗くした色）で描く。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>見出しはセリフ体</strong>（Cormorant Garamond系）。銀河で唯一、人文主義的な文字が許される様式。刻印のような落ち着いた字間。</li>
+<li><strong>ラベル・数値は細身の幾何学サンセリフ</strong>（Jost/Futura系、ライト級）。大文字＋広めトラッキングだが、holonetの機械的な硬さではなく、案内板の上品さ。</li>
+<li>オーレベッシュはsageの銘板（plaque）に刻む。銘板はカプセル形で、要所に少数。</li>
+<li>数字は細く、目盛りに沿って円弧状に配置されることが多い。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>対称と同心。</strong> レイアウトの基本は円と、円を並べた対称構成。矩形グリッドではなく、大きな円形計器を中心に衛星のように小計器を配す。</li>
+<li><strong>余白は豊か。</strong> holonetの詰め込みと正反対に、計器と計器の間に地色をたっぷり取る。</li>
+<li>曲線の流れ。コンソールの継ぎ目（seam）は曲線で、UIの区切りも直線より弧を好む。</li>
+<li>情報は「一目で読む計器」単位。表やリストを避け、ダイヤル・アーク・銘板で伝える。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li>深度は<strong>素材の重なり</strong>で表現する：陶板の上に金属リング、その上にガラスの小窓。各層はわずかな暖色の影（ドロップシャドウではなく、blush系の接地影）を持つ。</li>
+<li>coralの発光は熱のようなハロー。シアン系のシャープなネオンではなく、夕陽の滲み。</li>
+<li>plumの小窓だけが「奥」を持つ — 暗い奥行きにskyの線画が浮かぶ。それ以外の面は浅浮き彫り。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>円、楕円、カプセル。</strong> 直角はこの様式に存在しない。ビューポートも計器も銘板もすべて丸みで構成する。</li>
+<li><strong>リングとセグメント。</strong> 円形計器の縁は太いcoralのリングで、扇状に分割されたセグメント（ember）が状態を示す。</li>
+<li><strong>角丸は大きく柔らかく</strong>（soft = 20px、多くは完全な円/カプセル）。</li>
+<li>縁取りは二重線や細い金属モールのように繊細に。太い無骨な枠はない。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>dial:</strong> 円形計器。coralの発光リング＋ground面＋中心のシンボルまたは小窓。縁に沿ってティックと細数字。<strong>必ずshellの物理ベゼル（成形された台座）に埋まって見えること</strong> — 画面に直接描かれた円ではなく、筐体に嵌め込まれた計器である。密度は同心方向に稼ぐ：ベゼル→発光リング→セグメント環→目盛り環→数字環→小窓、とリングを重畳させる。</li>
+<li><strong>plaque:</strong> sageのカプセル銘板。オーレベッシュ（または大文字ラベル）をshell色で刻む。計器の上下に添える。</li>
+<li><strong>viewport-inset:</strong> plumの暗い小窓。skyトーンの映像・ワイヤーフレームを映す。縁はcoralの細いモール。</li>
+<li><strong>gauge-arc:</strong> 円弧ゲージ。blushのトラックにemberの充填。先端に小さな球。</li>
+<li><strong>console:</strong> shellの大きな曲面パネル。blushの曲線シームで領域を仕切る。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>明るい地に描く — 暗色はplumの小窓の中だけ</li>
+<li>円・楕円・カプセルで構成し、対称に配置する</li>
+<li>coralの発光に柔らかなハローを与える（夕陽の滲み、シアンの鋭さは禁物）</li>
+<li>セリフ体の見出しと細身サンセリフのラベルで上品に</li>
+<li>余白を豊かに取り、計器を宝飾のように独立させる</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>黒・純白・シアンを使わない（冷たい色はこの様式を殺す）。汎用UIの警告にも赤を導入しない — 状態は <strong>良好=sageの塗り、注意=emberの輪郭、警告=emberの塗り</strong> で写像する</li>
+<li>直角、チャンファー、鋭い切り欠きを使わない</li>
+<li>情報を詰め込まない — 表やデータグリッドはこの世界にない</li>
+<li>機械的なモノスペース数字の羅列を避ける</li>
+<li>グリッチ、走査線、ノイズ演出を持ち込まない（工芸品は劣化しない）</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/nubian/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medcenter — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#0B141E; --t-panel:#1C242E; --t-ink:#EAF6F8;
+  --t-soft:#8FE0F0; --t-faint:#8FE0F0; --t-accent:#8FE070;
+  --t-accent-ink:#111; --t-line:#8FE0F0;
+  --t-rs:22px; --t-rl:22px;
+  --t-case:none; --t-track:.02em;
+  --t-disp:Jost, 'Avenir Next', sans-serif;
+  --t-mono:'Share Tech Mono', 'JetBrains Mono', monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 09 / 14</p>
+    <h1>Medcenter</h1>
+    <p class="hook">暗闇に浮かぶガラスの円環</p>
+  </div>
+  <div class="tdesc"><p>『帝国の逆襲』のベーダーの再生室やバクタタンクの生体モニタ、カミーノのクローン施設、各作品の医療ドロイドの診断画面。勢力を横断する医療ドメインの様式で、患者が中心・UIは衛星。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/medcenter.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/medcenter.html" title="Medcenter showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/medcenter.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/medcenter.html" loading="lazy" title="Medcenter conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#0B141E;color:#fff">#0B141E</div><div class="tok">background</div></div><div class="chip-swatch"><div class="well" style="background:#1C242E;color:#fff">#1C242E</div><div class="tok">steel</div></div><div class="chip-swatch"><div class="well" style="background:#8FE0F0;color:#111">#8FE0F0</div><div class="tok">vital</div></div><div class="chip-swatch"><div class="well" style="background:#EAF6F8;color:#111">#EAF6F8</div><div class="tok">pale</div></div><div class="chip-swatch"><div class="well" style="background:#8FE070;color:#111">#8FE070</div><div class="tok">bio</div></div><div class="chip-swatch"><div class="well" style="background:#E8465C;color:#fff">#E8465C</div><div class="tok">alert</div></div><div class="chip-swatch"><div class="well" style="background:rgba(143, 224, 240, 0.14);color:#fff">rgba(143, 224, 240, 0.14)</div><div class="tok">glass</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>label</td><td>Jost</td><td>0.62rem / 300</td></tr><tr><td>numeric</td><td>Share Tech Mono</td><td>0.8rem / 400</td></tr><tr><td>aurebesh</td><td>Aurebesh</td><td>0.7rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>full</td><td>999px</td></tr><tr><td>none</td><td>0px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>xs</td><td>4px</td></tr><tr><td>sm</td><td>8px</td></tr><tr><td>md</td><td>14px</td></tr><tr><td>lg</td><td>22px</td></tr><tr><td>xl</td><td>36px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>Medcenterは、銀河の医療の様式である。ポリス・マッサの分娩監視、クラウド・シティの義手手術、レジスタンス艦のメディポッド — 時代と勢力を横断して、医療のスクリーンだけは同じ言語を話す。holonetが「情報の計器盤」なら、これは<strong>生命の観測装置</strong>だ。</p>
+<p>大原則は <strong>「ガラスの円環が、身体に触れずに浮かぶ」</strong>。UIは不透明なパネルではなく、半透明のホログラフィック・レイヤーとして患者の周囲に重畳する。太い線も塗り面もなく、極細のリング・目盛り・波形が静かに明滅する。機械が生命に対して謙虚であること — 画面が主張せず、身体が主役であることが、この様式の倫理である。</p>
+<h2>Colors</h2>
+<p>パレットは「暗い地 ＋ アイスシアンの正常 ＋ 生体の緑 ＋ 警告のサーモン」。</p>
+<ul>
+<li><strong>background (#0B141E) / steel (#1C242E):</strong> メドベイの暗がりと金属躯体。UIの背後で沈黙する。</li>
+<li><strong>vital (#8FE0F0):</strong> アイスシアン。稼働中・スキャン中・正常値。この様式の基調で、画面のほぼすべての線と数値。</li>
+<li><strong>pale (#EAF6F8):</strong> ほぼ白。スキャンリング・光学照準など「物理的な光」の中立色。</li>
+<li><strong>bio (#8FE070):</strong> 生体分子の緑。DNA螺旋、化学構造、検体。vitalと明確に区別された「生命情報」レイヤー。</li>
+<li><strong>alert (#E8465C):</strong> サーモンレッド。異常・警告・要注視。<strong>使用は例外的</strong> — 常に少量で、現れた瞬間に画面の意味が変わる。</li>
+<li><strong>glass:</strong> vitalの半透明面。パネルの地に使う唯一の「面」。</li>
+</ul>
+<p>色は3系統（vital/bio/alert）のみで、装飾色は存在しない。ここはkuat-sienarと同じ厳格さだが、任務色ではなく<strong>生死の意味論</strong>で分かれる。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>極細サンセリフ、広めの字間</strong>（Jost/Avenir系 light）。医療機器の刻印のような控えめなラベル。大文字だが、軍用テーマの威圧的なトラッキングより柔らかい。</li>
+<li><strong>数値は等幅</strong>で小さく、円弧に沿って曲げて配置されることもある。</li>
+<li>オーレベッシュの数値・記号列が「読めなくてもそれらしい」情報密度を作る。段落テキストは存在しない。</li>
+<li>文字はすべて発光の弱いvital色。alert時のみ赤へ。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>患者が中心、UIは衛星。</strong> レイアウトの原点はスクリーンではなく身体。リングは患者を囲み、パネルは寝台の脇に浮かぶ。</li>
+<li>円・同心円・円弧を骨格に、矩形パネルは従属的。</li>
+<li>密度は低〜中。監視するのは数本のバイタルであり、艦橋のような情報の飽和はない。</li>
+<li>余白は暗がり。埋めない。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li><strong>すべて半透明のホログラフィック・レイヤー。</strong> 背後の空間が透ける。不透明な面はない。</li>
+<li>深度は視差で表現する：手前に細く明るい円弧、奥に粗く暗いグリッド。2〜3層。</li>
+<li>発光はソフトなブルーム。ネオンの鋭さではなく、冷たい蛍光。</li>
+<li>六角形グリッドや細かい格子が最奥のテクスチャ層として敷かれることがある。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>円環・同心円・円弧が最頻出。</strong> スキャンリング（光輪）、目盛り環、照準環。矩形より円が常に優先。</li>
+<li><strong>線は細く均一（1〜1.5px）</strong>、角丸のない鋭い幾何。太線はこの様式に存在しない。</li>
+<li>パネルの縁は硬い枠線ではなく、エッジグローで滲む半透明の境界。</li>
+<li>波形は縦バーの列（心拍・脈波）。連続曲線よりも離散バー。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>scan-ring:</strong> 患者を囲む光輪状のリング。pale色、ゆっくり回転・明滅。スキャン範囲の物理的表示。</li>
+<li><strong>vitals-bars:</strong> 細い縦バーの列による脈波・心拍表示。基線を持つ。</li>
+<li><strong>glass-panel:</strong> vitalの半透明ガラス面＋淡い縁。浮遊するデータパネルの地。</li>
+<li><strong>helix:</strong> bioの二重螺旋・分子鎖。生体分子データの定番グラフィック。</li>
+<li><strong>orbit-diagram:</strong> 同心軌道リング＋発光球。バイタルの抽象的視覚化。</li>
+<li><strong>numeric-column:</strong> 等幅の数値列。異常値のみalertに変わる。</li>
+<li><strong>warning-glyph:</strong> 赤い三角＋感嘆符。この様式でほぼ唯一の明示的ピクトグラム。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>UIを半透明に保ち、背後の空間（身体）を透けさせる</li>
+<li>円環と円弧を骨格にする</li>
+<li>線は細く、発光は柔らかく、密度は抑える</li>
+<li>alertは例外として温存する — 現れた瞬間に意味が変わる色であること</li>
+<li>bioの緑は生体分子データ専用に守る</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>不透明なパネル・塗り面・チャンファー枠を持ち込まない（それはholonet系）</li>
+<li>太線・強いネオングロー・走査線ノイズを使わない</li>
+<li>画面を情報で飽和させない — 監視は静かであること</li>
+<li>alertを装飾や強調に流用しない</li>
+<li>3系統以外の色を追加しない</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/medcenter/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Podracer — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#2B241D; --t-panel:#5C4A3A; --t-ink:#F2A93C;
+  --t-soft:#C4A46A; --t-faint:#8A7B68; --t-accent:#4FBFDB;
+  --t-accent-ink:#111; --t-line:#8A7B68;
+  --t-rs:10px; --t-rl:10px;
+  --t-case:none; --t-track:.02em;
+  --t-disp:sans-serif;
+  --t-mono:monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 10 / 14</p>
+    <h1>Podracer</h1>
+    <p class="hook">アウター・リムの即興計器</p>
+  </div>
+  <div class="tdesc"><p>『ファントム・メナス』のポッドレース。アナキンが自作したポッドの計器、各レーサーの寄せ集めコックピット。規格の不在こそがアイデンティティで、DESIGN.mdは規格ではなく「逸脱の許容範囲」を定義する。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/podracer.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/podracer.html" title="Podracer showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/podracer.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/podracer.html" loading="lazy" title="Podracer conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#5C4A3A;color:#fff">#5C4A3A</div><div class="tok">housing</div></div><div class="chip-swatch"><div class="well" style="background:#8A7B68;color:#fff">#8A7B68</div><div class="tok">dust</div></div><div class="chip-swatch"><div class="well" style="background:#2B241D;color:#fff">#2B241D</div><div class="tok">dark</div></div><div class="chip-swatch"><div class="well" style="background:#F2A93C;color:#111">#F2A93C</div><div class="tok">amber</div></div><div class="chip-swatch"><div class="well" style="background:#4FBFDB;color:#111">#4FBFDB</div><div class="tok">cyan</div></div><div class="chip-swatch"><div class="well" style="background:#E0439A;color:#fff">#E0439A</div><div class="tok">magenta</div></div><div class="chip-swatch"><div class="well" style="background:#4CD97A;color:#111">#4CD97A</div><div class="tok">green</div></div><div class="chip-swatch"><div class="well" style="background:#E04A2B;color:#fff">#E04A2B</div><div class="tok">signal-red</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>glyph</td><td>Aurebesh</td><td>0.8rem / 400</td></tr><tr><td>readout</td><td>VT323</td><td>1.1rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>bezel</td><td>999px</td></tr><tr><td>panel</td><td>10px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>sm</td><td>6px</td></tr><tr><td>md</td><td>12px</td></tr><tr><td>lg</td><td>20px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>Podracerは、モス・エスパの経済圏 — 中古と鹵獲と改造で回るアウター・リム — の計器様式である。ポッドレーサーのコックピット、実況ブースの寄せ集めモニター壁、石造アーチに埋め込まれた後付けセンサー。</p>
+<p>大原則は <strong>「規格の不在がアイデンティティ」</strong>。同じ双発エンジン監視画面ですら、状態ごとに緑バー、青縞、白フレアと無節操に色が変わる。実況ブースでは筐体寸法も形式も異なるモニターが無秩序に並ぶ。これは怠慢ではなく生態系だ — 動く部品だけが生き残り、統一デザインなど誰も発注していない。ただし完全な無秩序ではなく、<strong>生き残った部品には共通の血</strong> — 円形ベゼル、滲む発光、剥き出しの配線 — が流れている。このDESIGN.mdが定義するのは規格ではなく、その「逸脱の許容範囲」である。</p>
+<h2>Colors</h2>
+<p>パレットは「砂と錆の筐体 ＋ その場しのぎの発光色」。</p>
+<ul>
+<li><strong>housing (#5C4A3A) / dust (#8A7B68) / dark (#2B241D):</strong> 打痕のある金属、砂岩、焦げ茶の暗部。UIの地はスクリーンではなく風化した物体。</li>
+<li><strong>amber (#F2A93C):</strong> コックピット計器の支配色。迷ったらこれ。</li>
+<li><strong>cyan (#4FBFDB):</strong> 寄せ集めモニターの色。別の機械から来た部品の色。</li>
+<li><strong>magenta (#E0439A) / green (#4CD97A) / signal-red (#E04A2B):</strong> その場しのぎのパラメータ色。</li>
+</ul>
+<p><strong>色の意味論は存在しない — それがこの様式の掟である。</strong> 赤=危険のような体系を作り込んではならない。色はパラメータごとにその場で割り当ててよい。ただし条件が2つ：①1つの計器の中では読み分けられること、②全体としてamberが支配的であること（そうしないとただのカオスになり、タトゥイーンの琥珀色の空気が消える）。</p>
+<h2>Typography</h2>
+<ul>
+<li>オーレベッシュは<strong>手彫りのように不揃い</strong>でよい。量産フォントの均質さを避け、字形・ウェイトの揺れを許容する。</li>
+<li>数値はドットマトリクス／セグメント風（VT323系）。計器ごとにサイズが違ってよい。</li>
+<li>ラテン風UIと絵記号が同じ壁に混在してよい（実況ブースの寄せ集め）。</li>
+<li>統一書体という概念自体を持ち込まない。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>整列しない。</strong> 統一グリッドは存在しない。計器は「取り付けられる場所に取り付けられた」配置であり、間隔も軸も揃わない。</li>
+<li>寸法の異なるパネルの同居が標準（patch-panel）。大きなモニターの隣に小さな丸ゲージ。</li>
+<li>ただし各計器の内部は機能的 — 読めない計器は捨てられて生き残らない。無秩序は計器の「間」にあり、「中」にはない。</li>
+<li>配線・パイプが計器の間を這う。UIの領域は配線に侵食されてよい。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li>深度は<strong>物理的な取り付け</strong>の深さ。埋め込まれた丸窓、飛び出したゲージ、ねじ止めされたモニター。</li>
+<li>発光はブラウン管的な強い滲み（bloom）。エッジのシャープなデジタル発光は存在しない。</li>
+<li>ガラス面の曇り・反射・指紋を許容する。視認性より使い込まれた実在感。</li>
+<li>走査線・ノイズ・にじみが常在。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>円形・涙滴形のベゼル</strong>が繰り返し現れる唯一の共通モチーフ。丸窓、丸ゲージ、丸モニター。</li>
+<li>角括弧のブラケット照準（HUD、フレーム装飾）。</li>
+<li>双発エンジンのライン図（左右対称の2ユニット概略図）が定番グラフィック。</li>
+<li>筐体は風化必須（weathering: required）— 新品のきれいな枠はこの世界に存在しない。</li>
+<li>角丸は大きめでいびつでよい。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>round-bezel:</strong> 円形／涙滴形の計器窓。錆びたhousingに埋め込まれ、風化が必須。</li>
+<li><strong>patch-panel:</strong> 寸法・形式の不揃いなパネルの寄せ集め。整列させないことが正しい。</li>
+<li><strong>engine-diagram:</strong> 双発エンジンのライン概略図。状態表示の色はその場割り当て（ad-hoc）。</li>
+<li><strong>bracket-reticle:</strong> 角括弧のHUD照準。</li>
+<li><strong>bar-cluster:</strong> 形式の混ざったバー群（縦バー、縞バー、ドット列が同居）。</li>
+<li><strong>wiring:</strong> 剥き出しの表面配線。計器と計器を物理的につなぐ視覚要素。</li>
+<li><strong>crt-bleed:</strong> 強いブルーム＋走査線＋曇りのオーバーレイ。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>計器ごとに形式・寸法・色を変える — 揃えないことが正しい</li>
+<li>amberを支配色に保ち、その下で色をその場割り当てする</li>
+<li>円形ベゼル・滲む発光・剥き出し配線という「最低限の共通の血」は守る</li>
+<li>筐体を風化させる（錆・打痕・砂埃・曇り）</li>
+<li>各計器の内部は読めるように — 機能しない部品は生き残らない。<strong>風化・曇り・にじみは可読性の最低線を割らないこと</strong>（ラベルと数値が一読できない計器は「壊れた部品」であり、この世界では捨てられている）</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>色の意味体系を作り込まない（赤=危険で統一、はこの世界にない）</li>
+<li>グリッドに整列させない、書体を統一しない</li>
+<li>新品の質感・シャープなデジタル発光・クリーンな枠を使わない</li>
+<li>1画面に情報を統合しない — 計器は分散した物体の群れであること</li>
+<li>他テーマの規律（チャンファー、ヘアライン、単色相システム）を持ち込まない</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/podracer/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

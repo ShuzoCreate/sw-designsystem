@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High Republic Jedi Order — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#FBF9F4; --t-panel:#F2EDE2; --t-ink:#3A3226;
+  --t-soft:#8A6D2F; --t-faint:#8C7F63; --t-accent:#A98426;
+  --t-accent-ink:#fff; --t-line:#DCD3C0;
+  --t-rs:26px; --t-rl:26px;
+  --t-case:none; --t-track:.02em;
+  --t-disp:'Cormorant Garamond', 'EB Garamond', serif;
+  --t-mono:monospace;
+  color-scheme:light;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 04 / 14</p>
+    <h1>High Republic Jedi Order</h1>
+    <p class="hook">白と金、寺院と灯台</p>
+  </div>
+  <div class="tdesc"><p>ハイ・リパブリック期（小説・コミック）のジェダイ聖堂とスターライト・ビーコン。スクリーンではなく紋章・碑文・建築装飾の言語。「寺院と灯台 — 光は公共物」。警告色が存在しない唯一のテーマ。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/high-republic-jedi-order.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/high-republic-jedi-order.html" title="High Republic Jedi Order showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/high-republic-jedi-order.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/high-republic-jedi-order.html" loading="lazy" title="High Republic Jedi Order conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#F2EDE2;color:#111">#F2EDE2</div><div class="tok">ivory</div></div><div class="chip-swatch"><div class="well" style="background:#FBF9F4;color:#111">#FBF9F4</div><div class="tok">white</div></div><div class="chip-swatch"><div class="well" style="background:#DCD3C0;color:#111">#DCD3C0</div><div class="tok">robe-shadow</div></div><div class="chip-swatch"><div class="well" style="background:#C9A24B;color:#111">#C9A24B</div><div class="tok">gold</div></div><div class="chip-swatch"><div class="well" style="background:#8A6D2F;color:#fff">#8A6D2F</div><div class="tok">gold-deep</div></div><div class="chip-swatch"><div class="well" style="background:#E8B45C;color:#111">#E8B45C</div><div class="tok">amber</div></div><div class="chip-swatch"><div class="well" style="background:#9FC4E8;color:#111">#9FC4E8</div><div class="tok">beacon-blue</div></div><div class="chip-swatch"><div class="well" style="background:#3A3226;color:#fff">#3A3226</div><div class="tok">ink</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>display</td><td>Cormorant Garamond</td><td>2.2rem / 500</td></tr><tr><td>inscription</td><td>Jost</td><td>0.7rem / 400</td></tr><tr><td>body</td><td>Jost</td><td>0.95rem / 300</td></tr><tr><td>aurebesh</td><td>Aurebesh</td><td>0.75rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>arc</td><td>999px</td></tr><tr><td>soft</td><td>14px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>sm</td><td>10px</td></tr><tr><td>md</td><td>18px</td></tr><tr><td>lg</td><td>32px</td></tr><tr><td>xl</td><td>56px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>High Republic Jedi Orderは、共和国の黄金時代（ハイ・リパブリック期）のジェダイの様式である。これはスクリーンUIではない — 白×金の礼装、スターライト・ビーコンの建築、放射する翼状の紋章という<strong>世界観ヴィジュアルからの落とし込み</strong>であり、物理世界の語彙をそのままwebの素材システムに翻訳する（織り縁取り→ボーダー、窓明かり→背景テクスチャ、後光→発光の扱い）。</p>
+<p>大原則は <strong>「寺院と灯台 — 光は公共物である」</strong>。この時代のジェダイは辺境を照らす灯台であり、その意匠は開かれ、輝き、歓迎する。同じジェダイでもプリクエル期の禁欲的な茶の修道士とは別の組織に見えるほど印象が異なる — 本テーマは時代をハイ・リパブリックに固定する。</p>
+<p>装飾の語彙は<strong>アール・デコ</strong>である。公式のブランドアイデンティティ（書籍・キーアート）が既にそれを宣言している：扇型（サンバースト）の角飾りを持つ金のカルトゥーシュ、二重線のデコフレーム、テキストを挟む小さな飾り記号、白地に置かれたベタ金の紋章。エレガントで装飾的だが、細い線と幾何学に規律されており、ゴテゴテしたラグジュアリーには決してならない。メイス・ウィンドゥのエレクトラム装飾のライトセーバーが後年まで残るように、金属細工の優美さがこの時代の記憶である。</p>
+<h2>Colors</h2>
+<p>パレットは「白の階調 ＋ 金の系統 ＋ 灯火の2色」。</p>
+<ul>
+<li><strong>white (#FBF9F4) / ivory (#F2EDE2) / robe-shadow (#DCD3C0):</strong> 礼装の白布の階調。地はこの3段で構成し、影すら温かい。</li>
+<li><strong>gold (#C9A24B) / gold-deep (#8A6D2F):</strong> 金属装飾の金。線・縁取り・飾り記号の色。<strong>面での使用は紋章とカルトゥーシュにのみ許す</strong>（白地にベタ金の紋章は公式アイデンティティの中核。ただし金の面を背景に使うのは成金 — 大面積は常に白）。</li>
+<li><strong>amber (#E8B45C):</strong> ビーコンの窓明かり。点として灯る温かい光。</li>
+<li><strong>beacon-blue (#9FC4E8):</strong> ライトセーバーとステーション照明の淡青。唯一の寒色で、聖なる区切りに少量。</li>
+<li><strong>ink (#3A3226):</strong> 文字の暖かい黒（純黒ではない）。</li>
+</ul>
+<p>黒・グレー・彩度の高い色は存在しない。警告色も存在しない — この様式は危機を語らない。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>見出しは古典的セリフ</strong>（Cormorant系）。碑文の風格だが、nubianの宮廷的な柔らかさより開かれた明快さ。</li>
+<li><strong>銘（inscription）は極広トラッキングの細サンセリフ大文字。</strong> 石に刻む間隔で、金または墨。</li>
+<li>本文は細身サンセリフのゆったりした行間 — 経典の読みやすさ。</li>
+<li>オーレベッシュは金の装飾銘として、クレストや縁取りに織り込む。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>中心と放射。</strong> 紋章的な中心軸のシンメトリー。主題を中央に、周囲へ放射状に展開する。</li>
+<li>余白は豊かに。詰めない — 空間そのものが荘厳さ。</li>
+<li>縦のピュロン（柱）状カードを並べる構成が基本単位（ビーコンの尖塔群のリズム）。</li>
+<li>ページの縁は gilt-border で額装される。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li><strong>影ではなく後光。</strong> 焦点要素は背後からの柔らかい白い光（halo）で浮かぶ。ドロップシャドウは存在しない。</li>
+<li>深度は白の階調差（white &gt; ivory &gt; robe-shadow）で作る浅浮き彫り。</li>
+<li>beacon-window の点状光がテクスチャとして最奥に灯る。</li>
+<li>全体の印象は「逆光の中の白」— 常にどこかが発光している。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>円環・放射・翼状。</strong> クレストは中心から放射する翼のモチーフ。円弧とアーチが枠の基本。</li>
+<li>直角は避け、角は大きな弧か柔らかい丸みで受ける。</li>
+<li>縁取りは幾何学的な織り模様（連続する菱形・翼形の繰り返し）。ページ・パネルの枠は<strong>二重線＋角の段差（デコのステップ）</strong>で組み、要所の角に扇飾りを置く。</li>
+<li>鋭利なもの・亀裂・非対称は存在しない（それはsith-orderの語彙）。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>crest:</strong> 放射翼のエンブレム。<strong>ベタ金のシルエット</strong>が正式形（白地に置く）。線画版は小サイズの章標用。</li>
+<li><strong>cartouche:</strong> 端を段状に切った横長の銘板。二重線の枠、四隅に扇型（サンバースト）の飾り。タイトル・ブランド表示の正式な器。</li>
+<li><strong>deco-flourish:</strong> 見出しや罫線を挟む小さな扇・矢羽の飾り記号。◄ TEXT ► の要領で、テキストの両脇に対で置く。</li>
+<li><strong>gilt-border:</strong> 織り模様の金縁。パネルとページの額装。</li>
+<li><strong>beacon-window:</strong> 点状の窓明かりグリッド。背景テクスチャとして最奥に。</li>
+<li><strong>halo:</strong> 焦点要素の背後の柔らかい後光。ボタンやカードのホバー状態もこれで表現する。</li>
+<li><strong>pylon-card:</strong> 縦長の白いカード。金の細縁、頂部に小さなクレスト。</li>
+<li><strong>saber-line:</strong> beacon-blueの細い発光罫線。聖なる区切りにのみ使う。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>白の階調と金の細工で組み、常にどこかを後光で光らせる</li>
+<li>アール・デコの語彙（扇・サンバースト・カルトゥーシュ・二重線フレーム・飾り記号）で装飾の密度を上げる — エレガントは装飾の欠如ではない</li>
+<li>中心軸シンメトリーと放射の幾何を守る</li>
+<li>金は線に、amberは点に、beacon-blueは聖なる区切りに</li>
+<li>余白を荘厳さとして扱う</li>
+<li>時代をハイ・リパブリックに固定する（茶の修道士ローブはプリクエル期 — 混ぜない）</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>ドロップシャドウ・暗い面・純黒を使わない</li>
+<li>金のベタ面を紋章・カルトゥーシュ以外に広げない（金は細工であって塗装ではない — 大面積の地は常に白）</li>
+<li>警告色・エラー色を導入しない（危機はこの様式の語彙にない）</li>
+<li>鋭利な角・亀裂・非対称を持ち込まない</li>
+<li>スクリーンUI的な計器・データ表示を捏造しない（これは世界の様式であって画面の様式ではない）</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/high-republic-jedi-order/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

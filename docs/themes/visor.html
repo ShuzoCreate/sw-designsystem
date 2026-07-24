@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visor — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#050505; --t-panel:#2A0603; --t-ink:#D8E4E8;
+  --t-soft:#E8352A; --t-faint:#C05B50; --t-accent:#E8352A;
+  --t-accent-ink:#fff; --t-line:#E8352A;
+  --t-rs:22px; --t-rl:22px;
+  --t-case:none; --t-track:.02em;
+  --t-disp:sans-serif;
+  --t-mono:monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 14 / 14</p>
+    <h1>Visor</h1>
+    <p class="hook">視界そのものが計器</p>
+  </div>
+  <div class="tdesc"><p>マンダロリアンのヘルメットHUD、ルークの電子双眼鏡、スカウト・トルーパーのバイザー。視界そのものに重なる光学HUD群で、ハードウェアの持ち主ごとに中身が変わる。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/visor.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/visor.html" title="Visor showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#050505;color:#fff">#050505</div><div class="tok">mask</div></div><div class="chip-swatch"><div class="well" style="background:#E8352A;color:#fff">#E8352A</div><div class="tok">ir-red</div></div><div class="chip-swatch"><div class="well" style="background:#4A0805;color:#fff">#4A0805</div><div class="tok">ir-red-deep</div></div><div class="chip-swatch"><div class="well" style="background:#3DDC97;color:#111">#3DDC97</div><div class="tok">night-green</div></div><div class="chip-swatch"><div class="well" style="background:#12233F;color:#fff">#12233F</div><div class="tok">night-blue</div></div><div class="chip-swatch"><div class="well" style="background:#B87333;color:#fff">#B87333</div><div class="tok">amber</div></div><div class="chip-swatch"><div class="well" style="background:#5C3317;color:#fff">#5C3317</div><div class="tok">amber-deep</div></div><div class="chip-swatch"><div class="well" style="background:#D8E4E8;color:#111">#D8E4E8</div><div class="tok">mono-pale</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>readout</td><td>Share Tech Mono</td><td>0.78rem / 400</td></tr><tr><td>aurebesh</td><td>Aurebesh</td><td>0.7rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>full</td><td>999px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>sm</td><td>8px</td></tr><tr><td>md</td><td>14px</td></tr><tr><td>lg</td><td>24px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>Visorは、スクリーンを持たないUIの様式である。マクロバイノキュラー、パイロットのヘルメットバイザー、爆撃照準器、ドロイドの視覚 — 画面の代わりに<strong>視界そのもの</strong>があり、そこに光の膜が重畳する。</p>
+<p>大原則は <strong>「見ることが即ち測ることである」</strong>。生の視界は単色フィルターに変換され（赤外の赤、暗視の緑、砂漠の琥珀）、レティクル・目盛り・数値がその同じ色で焼き付く。すべての描画が同一の発光色を持つのは、それらが<strong>同一のセンサーの出力</strong>だからだ。そして視界の縁には常にハードウェアの影 — バイザーの形をした黒いマスク — があり、これがレンズ越しであることを忘れさせない。</p>
+<h2>Colors</h2>
+<p>パレットは「黒いマスク ＋ センサーモード別のデュオトーン」。<strong>1視界1モード</strong>（vectorscope/kuat-sienarの1画面1色相の光学版）。</p>
+<ul>
+<li><strong>mask (#050505):</strong> バイザー枠の黒。視界の外周を囲む。純黒に近い。</li>
+<li><strong>ir-red (#E8352A) / ir-red-deep (#4A0805):</strong> 赤外・照準モード。明部と暗部のデュオトーン。</li>
+<li><strong>night-green (#3DDC97) / night-blue (#12233F):</strong> 暗視モード。緑の描画と青黒の視界。</li>
+<li><strong>amber (#B87333) / amber-deep (#5C3317):</strong> 砂漠・望遠モード。琥珀のデュオトーン。</li>
+<li><strong>mono-pale (#D8E4E8):</strong> モノクロ・グレイン モード。白黒の粒子の粗い視界。</li>
+</ul>
+<p>モードを混ぜない。ターゲットマーカーも数値もレティクルも、そのモードの明部色一色で描く。第二色はデュオトーンの暗部（視界側の色）だけ。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>等幅・セグメント風の数値</strong>が主役。座標、距離、速度のカウンタが刻々と更新される。</li>
+<li>オーレベッシュのグリフ列が数値に添う。ラベルは3〜4文字の略号まで。</li>
+<li>文字は視界の<strong>縁のゾーン</strong>に置かれる（四隅、下端の帯）。視界の中心は空けておく — そこは見るための場所。</li>
+<li>すべてモードの発光色。文字専用色は存在しない。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>中心は空、縁に計器。</strong> レティクルだけが中心を占有できる。数値・状態・スケールバーは四隅と上下端の帯に退避する。</li>
+<li>左右対称。縦スケールバー（目盛＋三角ポインタ）が左右に対で立つことが多い。</li>
+<li>密度は薄い。視界を遮るUIは本末転倒であり、要素は10個未満。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li>深度は「視界＝奥」「描画＝手前の膜」の2層だけ。描画層に内部の重なりはない。</li>
+<li>発光は蛍光管的な滲み（ブルーム）＋ハレーション。輝度はノイズで微振動する。</li>
+<li><strong>走査線・フィルムグレイン・ノイズが常在</strong>。クリーンな画面はこの様式に存在しない — 劣化こそがセンサーの実在感。</li>
+<li>ヴィネット（視界周辺の減光）でレンズの光学特性を再現する。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>視界の形＝横長オーバル（俵型）、こめかみ側に鋭角のノッチ。</strong> バイザーの物理形状が画面の輪郭を決める。双眼鏡型は真円、爆撃照準は全面＋円弧の縁飾り。</li>
+<li>レティクルは同心円＋クロスヘア。ロックオンは六角形。マーカーはダイヤモンドか括弧ブラケット。</li>
+<li>距離環・角度ダイヤル: 縁に沿ったティック付き円弧。</li>
+<li>収束するワイヤーフレーム照準線（爆撃照準）。</li>
+<li>線は1〜2px。すべての図形は「刻まれた光」で、塗り面はない。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>visor-mask:</strong> 視界を囲む黒いマスク。横長オーバル＋こめかみノッチが標準形。UIはこの内側にのみ存在する。</li>
+<li><strong>sensor-mode:</strong> デュオトーンのモード切替（ir-red / night / amber / mono）。ビューごとに1モード。</li>
+<li><strong>reticle:</strong> 同心円＋クロスヘア照準。中心専用。</li>
+<li><strong>range-ring:</strong> ティック付き円弧の距離環・角度ダイヤル。</li>
+<li><strong>hex-lock:</strong> 六角形のロックオン枠。捕捉時に対象へ吸着する。</li>
+<li><strong>target-marker:</strong> ダイヤモンド／ブラケットのマーカー＋短いラベル。</li>
+<li><strong>corner-readout:</strong> 四隅・下端帯の数値カウンタ。等幅、常時更新。</li>
+<li><strong>grain:</strong> 走査線＋粒状ノイズ＋微フリッカーのオーバーレイ。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>視界全体を1つのセンサーモード（デュオトーン）に統一する</li>
+<li>バイザーの物理形状で視界をマスクする</li>
+<li>中心を空け、計器を縁に寄せる</li>
+<li>走査線・グレイン・微フリッカーで「レンズ越し」を維持する</li>
+<li>描画をすべて同一発光色にする — 同一システムの出力であること</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>モードを混色しない（赤外の視界に緑の文字、は存在しない）</li>
+<li>視界の中心をUIで塞がない（レティクル以外）</li>
+<li>パネル・カード・塗り面を持ち込まない（ここにスクリーンはない）</li>
+<li>クリーンでノイズレスな描画にしない — 劣化の除去はこの様式の否定</li>
+<li>マスクなしの全面ブリードを標準にしない（例外は爆撃照準のみ）</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/visor/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

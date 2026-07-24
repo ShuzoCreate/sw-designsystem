@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sith Order — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#08070A; --t-panel:#211D1B; --t-ink:#A79E93;
+  --t-soft:#8C8378; --t-faint:#6E655D; --t-accent:#FF4A22;
+  --t-accent-ink:#fff; --t-line:#3A342F;
+  --t-rs:0px; --t-rl:0px;
+  --t-case:none; --t-track:.02em;
+  --t-disp:'Roboto Slab', 'Zilla Slab', 'Noto Serif', serif;
+  --t-mono:'IBM Plex Mono', 'Share Tech Mono', monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 12 / 14</p>
+    <h1>Sith Order</h1>
+    <p class="hook">暗闇に走るひとつの光の傷</p>
+  </div>
+  <div class="tdesc"><p>マラコアのシス神殿、モラバンドの谷、エクセゴルのシタデル、シス・ホロクロンとウェイファインダー。神殿から手のひらの遺物まで同じ三角錐が縮尺違いで反復する。設計者がいない遺物の系譜で、「デザイン」という概念の外にある。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/sith-order.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/sith-order.html" title="Sith Order showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/sith-order.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/sith-order.html" loading="lazy" title="Sith Order conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#08070A;color:#fff">#08070A</div><div class="tok">void</div></div><div class="chip-swatch"><div class="well" style="background:#211D1B;color:#fff">#211D1B</div><div class="tok">stone</div></div><div class="chip-swatch"><div class="well" style="background:#6E655D;color:#fff">#6E655D</div><div class="tok">ash</div></div><div class="chip-swatch"><div class="well" style="background:#7C6240;color:#fff">#7C6240</div><div class="tok">bronze</div></div><div class="chip-swatch"><div class="well" style="background:#FF4A22;color:#fff">#FF4A22</div><div class="tok">ember</div></div><div class="chip-swatch"><div class="well" style="background:#4A0F07;color:#fff">#4A0F07</div><div class="tok">ember-deep</div></div><div class="chip-swatch"><div class="well" style="background:#3CC172;color:#111">#3CC172</div><div class="tok">relic-green</div></div><div class="chip-swatch"><div class="well" style="background:#A8D8FF;color:#111">#A8D8FF</div><div class="tok">wound-blue</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>label</td><td>Roboto Slab</td><td>0.78rem / 400</td></tr><tr><td>numeric</td><td>IBM Plex Mono</td><td>0.86rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>none</td><td>0px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>xs</td><td>6px</td></tr><tr><td>sm</td><td>12px</td></tr><tr><td>md</td><td>20px</td></tr><tr><td>lg</td><td>40px</td></tr><tr><td>xl</td><td>88px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>Sith Orderは、Malachorの神殿とホロクロン、Morabandの墓所、ExegolのSith Citadel、Sith wayfinder、Ashas Reeの遺物という一次資料を核に、公式Legendsの造形と制作コンセプトを補助線として読む非スクリーン系テーマである。</p>
+<p>大原則は <strong>「膨大な暗闇に走る、たったひとつの不規則な光の傷 — 見る者は常にその前で小さい」</strong>。マラコアの神殿を見上げる人影は豆粒ほどしかない。その圧倒的な暗闇の質量こそが内容であり、埋めるべき空白ではない。そしてその暗闇のどこかに、必ずひとつだけ不規則な亀裂が走り、そこから光が漏れる — まっすぐな縁取りではなく、稲妻のように幅を変え、時に枝分かれする一本の傷。</p>
+<p>第二の原則は <strong>「神殿も、手のひらのホロクロンも、同じ殻を縮尺違いで反復する」</strong>。マラコアの神殿、ウェイファインダー、ホロクロン、遺物——建築も携行遺物も、すべて三角錐という同じ聖なる形の相似形である。この様式のUIは、ページ全体の構図からボタンひとつの輪郭まで、同じ形の家族を縮尺を変えて反復させることで一貫性を持つ。ロゴのような単一形状の使い回しではなく、段状ピラミッド・細長いオベリスク・楔形の尖塔・欠けた破片という数個の変種からその都度選ぶ、自然に生まれた反復である。</p>
+<p>第三の原則は <strong>「技術と魔術の区別が、そもそも意味を持たない」</strong>。亀裂に沿って光る刻線は、溶岩の割れ目か、回路のトレースか、古代の文字か判別できない。これは「有機か無機か」という一軸の話ではなく、遺物そのものの本性が現代的なカテゴリーの外側にあるということである。</p>
+<p>このテーマは、high-republic-jedi-orderの対極にある — 「光は公共物である」灯台に対し、こちらは「光は傷としてしか存在しない」墓所である。またvectorscopeやkuat-sienarのような<strong>現代の設計主体（造船所・帝国軍・匿名の実用機器）が作ったものでもない</strong> — シスの遺物には設計者がいない。これは古すぎて「デザイン」という概念そのものが適用できない工芸である。操作の比喩はダッシュボードではなく、封印を少しずつ剥がしていく発掘作業である。</p>
+<h2>Colors</h2>
+<p>パレットは意図的に狭い。<strong>無彩色3つ（void / stone / ash）＋ 金属1つ（bronze）＋ 発光4つ（ember系2つ＋稀少な代替2つ）</strong>。近似した暗い中間色を何段も置かない — それは輪郭を曖昧にし、CSSの説明図になる原因である。</p>
+<ul>
+<li><strong>void (#08070A):</strong> 支配的な地。画面の85%以上。星のない虚空であり、装飾的なグラデーションを持たない。</li>
+<li><strong>stone (#211D1B):</strong> 石・金属・布が環境光を受けて浮かぶ唯一の中間面。voidとの差は小さく、輪郭よりも「そこに質量がある」という気配で存在を示す。</li>
+<li><strong>ash (#6E655D):</strong> 摩耗し露出した縁、静かな本文の文字色。純白は決して使わない。</li>
+<li><strong>bronze (#7C6240):</strong> 遺物の外殻・留め具・封印帯。艶のある金ではなく、燻んだ金属。</li>
+<li><strong>ember (#FF4A22) / ember-deep (#4A0F07):</strong> 既定の発光。emberが亀裂そのもの、ember-deepはその滲みと消えかけた残光。</li>
+<li><strong>relic-green (#3CC172):</strong> 稀少な代替光。ウェイファインダーのような経路解読・探索の文脈、または<code>exposure-state</code>の遷移を示す一瞬にのみ予約する。「成功」の色として汎用化しない。</li>
+<li><strong>wound-blue (#A8D8FF):</strong> 稀少な代替光。Exegolのような巨大建築・冷たい大気の文脈にのみ。操作色にしない。</li>
+</ul>
+<p><strong>1構成につき発光色は1つだけ</strong>（vectorscope/kuat-sienarの「1画面1色相」と同じ規律だが、理由が違う——あちらは設計者の統一規格、こちらは一つの傷は一つの色でしか燃えないという物理的な事実）。侵食・汚れは全面へノイズを撒くのではなく、上端に煤が溜まる・接合部が酸化する・下端が土に埋もれるといった、原因を持つ2〜3箇所の堆積として置く。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>この様式に「見出し用の華麗な書体」は存在しない。</strong> 主役は常に<code>fracture-glow</code>と<code>relic-form</code>であり、文字がドラマを持ってはならない。大きな装飾セリフ（優美なエディトリアル）も、コンデンスドの全大文字（軍用ラベル）も、どちらもこの様式の失敗の最短距離であり禁止する。</li>
+<li><strong>label</strong>は控えめなスラブセリフ（Roboto Slab系）、小さく、通常の大文字小文字混在（全大文字トラッキングにしない）。金属に刻印されたような、静かで実務的な文字。</li>
+<li><strong>numeric</strong>は等幅。座標・年代・深度などの数値に。</li>
+<li><strong>incised-glyph</strong>（亀裂に沿う刻線）は非ラテンの手続き的グリフで生成し、装飾専用——意味のある情報を単独で担わせない。読めないことが正しい。</li>
+<li>文字サイズの序列で情報の重要度を語らない。重要度は<code>exposure-state</code>（露出段階）と<code>fracture-glow</code>の有無で語る。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>voidが多数派、コンテンツは少数派。</strong> 要素を画面に均等に配らない。1〜2個の大きな<code>relic-form</code>に情報を集約し、残りは意図的な虚空にする。マラコアの人影のように、コンテンツは常に画面の中で小さく、非対称な位置に置かれてよい。</li>
+<li>中心軸への引力はあるが、<strong>左右を鏡像複製しない</strong>。完全な対称は<code>fracture-glow</code>が露出する最深部（コアの三角形）だけに許される特権であり、外殻・レイアウト全体には適用しない。</li>
+<li>均等なカードグリッドを避ける。情報は1〜3個の大きな<code>relic-form</code>へ束ね、小項目はその表面の刻印や帯として従属させる。</li>
+<li>レスポンシブでは層を縦に重ねる。非対称な欠損・汚れをミラーコピーしない。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li>深度は石・金属・布を浅く重ねて作る。柔らかいドロップシャドウ、ガラスの浮遊カード、ぼかしは存在しない。</li>
+<li><code>fracture-glow</code>だけが例外的に強い発光（ブルーム）を持つ。他のすべての面は反射せず、鈍く沈む。</li>
+<li>侵食は表面に乗せたテクスチャではなく、構造の履歴として描く（欠けた角の内側から別の層が見える、後から留め具を足した、等）。</li>
+<li><code>relic-form</code>の完全な幾何（正確な三角形・均整の取れた稜線）は<code>exposure-state</code>が<code>awakened</code>（核が露出した状態）のときだけ現れる。それ以外は殻に覆われ歪んで見えてよい。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>relic-form</strong>は4つの変種——段状ピラミッド、細長いオベリスク、楔形の尖塔、欠けた破片——から選ぶ。厳密に同一の三角形をロゴのように使い回すと、逆に「デザインされた」ブランドに見えてしまうので避ける。</li>
+<li>角丸・ピル・滑らかな曲面は一切使わない。曲線が必要な場合は、封印環や埋葬跡のような<strong>不完全な弧</strong>としてのみ許可する（high-republic-jedi-orderの完全な後光にしない）。</li>
+<li><code>fracture-glow</code>の経路は不規則——幅が変化し、途切れ、多くて一度だけ枝分かれする。まっすぐな縁取りネオンには絶対にしない。</li>
+<li>生物的な気配は直接描写せず、類似で暗示する程度に留める（平行な帯が肋骨に見える、重なる薄板が皮膜に見える）。One Sith固有の角・棘・甲殻・全身刺青をこの様式全体の語彙にはしない。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>void-field:</strong> 支配的な暗い地。85%以上の画面占有率。テクスチャはごく淡いか、無地。</li>
+<li><strong>relic-form:</strong> 4変種の三角錐系シルエット。ページの主要構図からボタンの輪郭まで、同じ形の家族をスケール違いで反復させる基本単位。</li>
+<li><strong>fracture-glow:</strong> 1構成に1本、不規則な経路を持つ発光の亀裂。既定色はember。稀少な文脈でrelic-green/wound-blueに差し替え可（同時使用は不可）。</li>
+<li><strong>incised-glyph:</strong> 亀裂に沿う非ラテンの装飾刻線。手続き的に生成し、意味のある情報の代替にしない。</li>
+<li><strong>bronze-ward:</strong> 封印・無効化・拒否状態を表す燻んだ金属の帯や留め具。塗りつぶしの警告色を使わない代替。</li>
+<li><strong>exposure-state:</strong> buried（埋没・未着手）→ bound（拘束・待機）→ incised（刻印露出・進行中）→ awakened（核露出・完了/選択）の4段階。色相の切り替えではなく、殻がどれだけ剥がれているかで状態を語る。汎用UIの成功/警告/エラーはこの4段階へ写像し、緑黄赤の直結色に頼らない。</li>
+<li><strong>data-seam:</strong> チャート・データ表示。ひとつの暗い基線から不揃いな高さの発光する亀裂が立ち上がる形で値を示す。色の変化ではなく高さが真実を語り、最大値または選択値だけがember-deepではなくemberの芯を見せてよい。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>voidを85%以上にし、コンテンツを画面の中で小さく非対称に置く（見る者が常に小さい者であるように）</li>
+<li>fracture-glowを不規則な一本の傷として描く——幅を変え、時々枝分かれさせる</li>
+<li>relic-formの4変種を、ページ全体からボタン一つまで同じ形の家族として反復させる</li>
+<li>侵食・汚れに原因と方向を与える（上端に煤、接合部に酸化、等）</li>
+<li>実際に読ませる文字は小さく静かに扱い、ドラマは光と形だけに持たせる</li>
+<li>状態変化はexposure-state（埋没→拘束→刻印→露出）で語り、色相の切り替えに頼らない</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>コンデンスドの全大文字・均一グリッド・鏡像パネルで組まない——それは帝国の管制端末に見える最短距離</li>
+<li>大きく優美なセリフ見出しを主役にしない——それは現代の高級エディトリアル／オカルトブランドに見える最短距離</li>
+<li>暗闇を説明的な線画（肋骨・腱・回路図のベクター）で埋めない。空白そのものが内容である</li>
+<li>発光色を1構成で2色以上同時に使わない</li>
+<li>ランダムなノイズ・グランジフィルタで古さを代用しない。汚れは構造の履歴であること</li>
+<li>One Sithの角・棘・甲殻・全身刺青、ダークパープル、魔女の渦巻き、儀式布、フェイスペイントをこの様式全体の語彙にしない（一時代・一勢力の固有意匠であり普遍規則ではない）</li>
+<li>頭蓋骨・牙・悪魔角・五芒星・ブラックレターで一般的なオカルトへ寄せない</li>
+<li>relic-formを厳密に同一の図形として使い回さない（ロゴ化すると「設計された」印象に転じる）</li>
+<li>スクリーン計器を作中のシス技術として捏造しない。これは物理世界の建築・遺物・装束の系譜を汎用UIへ翻訳するテーマである</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/sith-order/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

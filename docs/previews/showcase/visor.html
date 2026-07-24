@@ -1,0 +1,389 @@
+<title>Visor — theme preview</title>
+<style>
+@font-face{font-family:'Share Tech Mono';src:url(data:font/woff2;base64,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) format('woff2');font-weight:400;font-display:block}
+:root{
+  /* themes/visor/DESIGN.md tokens */
+  --mask:#050505;
+  --ir-red:#E8352A;
+  --ir-red-deep:#4A0805;
+  --night-green:#3DDC97;
+  --night-blue:#12233F;
+  --amber:#B87333;
+  --amber-deep:#5C3317;
+  --mono-pale:#D8E4E8;
+  --full:999px;
+  --sm:8px;--md:14px;--lg:24px;
+  --f-readout:'Share Tech Mono','JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{color-scheme:dark}
+body{
+  background:var(--mask);
+  color:var(--mono-pale);
+  font-family:var(--f-readout);
+  min-height:100vh;
+  padding:var(--lg) var(--md) var(--md);
+  display:flex;flex-direction:column;align-items:center;gap:var(--lg);
+}
+
+.stage{display:flex;flex-direction:column;align-items:center;gap:var(--md);width:100%;max-width:1040px}
+
+.viewblock{display:flex;flex-direction:column;align-items:center;gap:var(--sm)}
+.cap{
+  font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--mono-pale);opacity:.55;
+}
+
+/* ============ shared visor glow wrapper ============ */
+.glow{position:relative}
+
+/* ============ NIGHT: horizontal oval + temple notch ============ */
+.visor-night{
+  position:relative;
+  width:min(92vw,980px);
+  aspect-ratio:2.35/1;
+  overflow:hidden;
+  clip-path:polygon(
+    10% 0%, 90% 0%, 94% 0.6%, 97% 2%, 99% 4.5%, 100% 8%,
+    100% 40%, 100% 44%, 88.5% 50%, 100% 56%, 100% 60%,
+    100% 92%, 99% 95.5%, 97% 98%, 94% 99.4%, 90% 100%,
+    10% 100%, 6% 99.4%, 3% 98%, 1% 95.5%, 0% 92%,
+    0% 60%, 0% 56%, 11.5% 50%, 0% 44%, 0% 40%,
+    0% 8%, 1% 4.5%, 3% 2%, 6% 0.6%
+  );
+  background:var(--night-blue);
+  filter:drop-shadow(0 0 22px rgba(61,220,151,.16));
+}
+.visor-night canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.visor-night .layer{position:absolute;inset:0}
+
+/* ============ IR: true circle scope ============ */
+.visor-ir{
+  position:relative;
+  width:min(60vw,440px);
+  aspect-ratio:1/1;
+  border-radius:var(--full);
+  overflow:hidden;
+  background:radial-gradient(circle at 50% 46%, #611007 0%, var(--ir-red-deep) 58%, #170201 100%);
+  filter:drop-shadow(0 0 20px rgba(232,53,42,.22));
+}
+.visor-ir .layer{position:absolute;inset:0}
+
+/* ============ grain: scanline + noise + vignette (shared) ============ */
+.scanlines{
+  background:repeating-linear-gradient(0deg, rgba(0,0,0,.32) 0 1px, transparent 1px 3px);
+  mix-blend-mode:multiply;
+  pointer-events:none;
+}
+.noise{
+  opacity:.16;mix-blend-mode:overlay;pointer-events:none;
+}
+.vignette-night{
+  background:radial-gradient(ellipse at 50% 50%, transparent 38%, rgba(5,5,5,.55) 78%, rgba(5,5,5,.92) 100%);
+  pointer-events:none;
+}
+.vignette-ir{
+  background:radial-gradient(circle at 50% 50%, transparent 34%, rgba(5,5,5,.5) 74%, rgba(5,5,5,.96) 100%);
+  pointer-events:none;
+}
+@media (prefers-reduced-motion:no-preference){
+  .flicker{animation:flicker 3.6s steps(19) infinite}
+  @keyframes flicker{
+    0%,100%{opacity:1} 4%{opacity:.86} 6%{opacity:1} 41%{opacity:1}
+    43%{opacity:.9} 45%{opacity:1} 78%{opacity:1} 80%{opacity:.88} 82%{opacity:1}
+  }
+}
+
+/* ============ readout typography ============ */
+.readout{
+  font-family:var(--f-readout);
+  font-size:.78rem;font-weight:400;letter-spacing:.12em;line-height:1.25;
+  white-space:nowrap;
+}
+.readout small{font-size:.62rem;opacity:.72;letter-spacing:.18em}
+.glowtext-g{color:var(--night-green);text-shadow:0 0 6px rgba(61,220,151,.85),0 0 14px rgba(61,220,151,.35)}
+.glowtext-r{color:var(--ir-red);text-shadow:0 0 6px rgba(232,53,42,.9),0 0 15px rgba(232,53,42,.4)}
+
+/* ============ corner readouts (night) ============ */
+.corner{position:absolute;display:flex;flex-direction:column;gap:2px}
+.corner.tl{top:6%;left:11%;align-items:flex-start}
+.corner.tr{top:6%;right:11%;align-items:flex-end;text-align:right}
+.corner.bl{bottom:20%;left:9.5%;align-items:flex-start}
+.corner.br{bottom:20%;right:9.5%;align-items:flex-end;text-align:right}
+.corner .aur{display:block}
+
+.bottomband{
+  position:absolute;left:50%;bottom:5.5%;transform:translateX(-50%);
+  display:flex;align-items:center;gap:12px;
+}
+.bottomband .aur{display:block}
+
+/* ============ vertical scale bars (night) ============ */
+.scalebar{position:absolute;top:20%;bottom:20%;width:14px}
+.scalebar.left{left:4.6%}
+.scalebar.right{right:4.6%}
+.scalebar .ticks{
+  position:absolute;left:50%;top:0;bottom:0;width:1px;
+  background:repeating-linear-gradient(180deg, var(--night-green) 0 1px, transparent 1px 11px);
+  opacity:.85;
+}
+.scalebar .tick-long{
+  position:absolute;left:0;width:100%;height:1px;background:var(--night-green);opacity:.9;
+}
+.scalebar .ptr{
+  position:absolute;left:50%;width:0;height:0;
+  border-top:5px solid transparent;border-bottom:5px solid transparent;
+}
+.scalebar.left .ptr{border-left:7px solid var(--night-green);transform:translate(2px,-50%)}
+.scalebar.right .ptr{border-right:7px solid var(--night-green);transform:translate(-9px,-50%)}
+
+/* ============ hex-lock (night) ============ */
+.hexlock{position:absolute;top:38%;left:52%;width:15%;aspect-ratio:1/1;transform:translate(-50%,-50%)}
+
+/* ============ reticle (night) ============ */
+.reticle-night{position:absolute;inset:0}
+
+/* ============ IR concentric reticle / wireframe ============ */
+.svc{position:absolute;inset:0}
+
+footer{
+  font-size:.6rem;letter-spacing:.22em;color:var(--mono-pale);opacity:.6;
+  text-transform:none;padding-top:var(--sm);
+}
+.aur{display:inline-block}
+</style>
+
+<div class="stage">
+
+  <div class="viewblock">
+    <div class="glow">
+      <div class="visor-night" id="nightVisor">
+        <canvas id="terrainCanvas" width="980" height="417"></canvas>
+
+        <svg class="layer reticle-night" viewBox="0 0 100 42.5" preserveAspectRatio="none" aria-hidden="true">
+          <g stroke="var(--night-green)" stroke-width="0.14" opacity=".8" fill="none">
+            <!-- crosshair guide lines flanking the hex lock, gap at center -->
+            <line x1="30" y1="21.25" x2="41" y2="21.25"/>
+            <line x1="63" y1="21.25" x2="74" y2="21.25"/>
+            <line x1="52" y1="10" x2="52" y2="16.4"/>
+            <line x1="52" y1="26.1" x2="52" y2="32.5"/>
+            <circle cx="52" cy="21.25" r="0.5" fill="var(--night-green)" stroke="none" opacity=".9"/>
+          </g>
+        </svg>
+
+        <svg class="hexlock" viewBox="0 0 100 100" aria-hidden="true">
+          <polygon points="50,4 91,27 91,73 50,96 9,73 9,27" fill="none" stroke="var(--night-green)" stroke-width="1.6" opacity=".88"/>
+          <line x1="50" y1="4" x2="50" y2="16" stroke="var(--night-green)" stroke-width="1.4" opacity=".7"/>
+          <line x1="91" y1="50" x2="79" y2="50" stroke="var(--night-green)" stroke-width="1.4" opacity=".7"/>
+          <circle cx="50" cy="50" r="2" fill="var(--night-green)" opacity=".7"/>
+        </svg>
+
+        <div class="layer">
+          <div class="corner tl readout glowtext-g">
+            <span>02C.446</span>
+            <span class="aur" data-n="4" data-seed="12" data-h="8" data-c="#3DDC97"></span>
+          </div>
+          <div class="corner tr readout glowtext-g">
+            <span>ALT 0851</span>
+            <span class="aur" data-n="3" data-seed="44" data-h="8" data-c="#3DDC97"></span>
+          </div>
+          <div class="corner bl readout glowtext-g">
+            <span>HDG 316</span>
+            <span class="aur" data-n="3" data-seed="71" data-h="8" data-c="#3DDC97"></span>
+          </div>
+          <div class="corner br readout glowtext-g">
+            <span>RNG 0468</span>
+            <span class="aur" data-n="4" data-seed="90" data-h="8" data-c="#3DDC97"></span>
+          </div>
+          <div class="bottomband readout glowtext-g">
+            <span class="aur" data-n="6" data-seed="23" data-h="9" data-c="#3DDC97"></span>
+            <span><small>V·ENV</small> 406.22</span>
+            <span class="aur" data-n="4" data-seed="65" data-h="9" data-c="#3DDC97"></span>
+          </div>
+
+          <div class="scalebar left">
+            <div class="ticks"></div>
+            <div class="tick-long" style="top:14%"></div>
+            <div class="tick-long" style="top:50%"></div>
+            <div class="tick-long" style="top:86%"></div>
+            <div class="ptr" style="top:38%"></div>
+          </div>
+          <div class="scalebar right">
+            <div class="ticks"></div>
+            <div class="tick-long" style="top:14%"></div>
+            <div class="tick-long" style="top:50%"></div>
+            <div class="tick-long" style="top:86%"></div>
+            <div class="ptr" style="top:63%"></div>
+          </div>
+        </div>
+
+        <div class="layer scanlines flicker"></div>
+        <canvas class="layer noise" id="nightNoise" width="245" height="105"></canvas>
+        <div class="layer vignette-night"></div>
+      </div>
+    </div>
+    <p class="cap">night — night-green / night-blue duotone</p>
+  </div>
+
+  <div class="viewblock">
+    <div class="glow">
+      <div class="visor-ir" id="irVisor">
+        <svg class="layer svc" viewBox="0 0 100 100" aria-hidden="true">
+          <!-- converging wireframe: perspective floor grid receding to a vanishing point,
+               kept clear of the crosshair's vertical centerline -->
+          <g stroke="var(--ir-red)" stroke-width=".3" opacity=".42" fill="none">
+            <line x1="50" y1="63" x2="2" y2="100"/>
+            <line x1="50" y1="63" x2="22" y2="100"/>
+            <line x1="50" y1="63" x2="78" y2="100"/>
+            <line x1="50" y1="63" x2="98" y2="100"/>
+            <line x1="14" y1="84" x2="86" y2="84"/>
+            <line x1="7" y1="94" x2="93" y2="94"/>
+          </g>
+          <!-- locked target: small wireframe box riding the grid, offset from centerline -->
+          <g stroke="var(--ir-red)" stroke-width=".55" opacity=".85" fill="none">
+            <polygon points="21,79 33,76.5 33,86.5 21,89"/>
+            <polygon points="21,79 33,76.5 38,80 26,82.5"/>
+            <polygon points="33,76.5 38,80 38,90 33,86.5"/>
+            <line x1="21" y1="89" x2="26" y2="91.5"/>
+            <line x1="26" y1="91.5" x2="38" y2="90"/>
+            <line x1="26" y1="82.5" x2="26" y2="91.5"/>
+          </g>
+
+          <!-- concentric circle reticle -->
+          <g stroke="var(--ir-red)" fill="none" opacity=".9">
+            <circle cx="50" cy="50" r="34" stroke-width=".5"/>
+            <circle cx="50" cy="50" r="22" stroke-width=".5"/>
+          </g>
+          <g stroke="var(--ir-red)" stroke-width=".7" opacity=".95">
+            <!-- crosshair with center gap -->
+            <line x1="50" y1="8" x2="50" y2="42"/>
+            <line x1="50" y1="58" x2="50" y2="92"/>
+            <line x1="8" y1="50" x2="42" y2="50"/>
+            <line x1="58" y1="50" x2="92" y2="50"/>
+            <!-- bracket ticks at ring/crosshair intersections -->
+            <path d="M 46 12 L 50 8 L 54 12"/>
+            <path d="M 46 88 L 50 92 L 54 88"/>
+            <path d="M 12 46 L 8 50 L 12 54"/>
+            <path d="M 88 46 L 92 50 L 88 54"/>
+          </g>
+          <circle cx="50" cy="50" r="1" fill="var(--ir-red)" opacity=".85"/>
+        </svg>
+
+        <div class="layer">
+          <div class="bottomband readout glowtext-r" style="bottom:9%">
+            <span class="aur" data-n="3" data-seed="18" data-h="8" data-c="#E8352A"></span>
+            <span>LCK 0.62</span>
+          </div>
+        </div>
+
+        <div class="layer scanlines flicker"></div>
+        <canvas class="layer noise" id="irNoise" width="245" height="105"></canvas>
+        <div class="layer vignette-ir"></div>
+      </div>
+    </div>
+    <p class="cap">ir — ir-red / ir-red-deep duotone</p>
+  </div>
+
+</div>
+
+<footer>themes/visor/DESIGN.md verification sample — tokens only</footer>
+
+<script>
+(() => {
+/* pseudo-aurebesh glyph runs, per DESIGN.md typography.aurebesh */
+function aurebesh(n,sd,h,color){
+  const gw=h*0.82, gap=Math.max(3,Math.round(gw*0.4));
+  let s2=sd;const r=()=>(s2=(s2*16807)%2147483647)/2147483647;
+  let s=`<svg width="${n*(gw+gap)}" height="${h+2}" viewBox="0 0 ${n*(gw+gap)} ${h+2}" aria-hidden="true">`;
+  for(let i=0;i<n;i++){
+    const x=i*(gw+gap),k=2+Math.floor(r()*3);
+    for(let j=0;j<k;j++){
+      const pts=[[x,1],[x+gw,1],[x,h],[x+gw,h],[x+gw/2,1],[x+gw/2,h],[x,h/2+1],[x+gw,h/2+1]];
+      const a=pts[Math.floor(r()*pts.length)];let b=pts[Math.floor(r()*pts.length)];
+      if(a===b)b=pts[(pts.indexOf(a)+3)%pts.length];
+      s+=`<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" stroke="${color}" stroke-width="${Math.max(1.1,h/9)}" opacity=".9" stroke-linecap="square"/>`;
+    }
+  }
+  return s+'</svg>';
+}
+document.querySelectorAll('.aur').forEach(el=>{
+  el.innerHTML=aurebesh(+el.dataset.n||4,+el.dataset.seed||11,+el.dataset.h||8,el.dataset.c||'#3DDC97');
+});
+
+/* ---- night terrain: canvas silhouette, night-blue duotone only ---- */
+(() => {
+  const cv=document.getElementById('terrainCanvas');
+  const ctx=cv.getContext('2d');
+  const W=cv.width,H=cv.height;
+  const deep='#0A1526', mid='#17335C', pale='#2A4C82';
+
+  const sky=ctx.createLinearGradient(0,0,0,H);
+  sky.addColorStop(0,'#0D1B33');
+  sky.addColorStop(.58,'#122542');
+  sky.addColorStop(1,deep);
+  ctx.fillStyle=sky;
+  ctx.fillRect(0,0,W,H);
+
+  /* haze band */
+  ctx.fillStyle='rgba(42,76,130,.18)';
+  ctx.fillRect(0,H*0.44,W,H*0.14);
+
+  function ridge(baseY, amp, seed, color){
+    let s=seed;const r=()=>(s=(s*16807)%2147483647)/2147483647;
+    ctx.beginPath();
+    ctx.moveTo(0,H);
+    ctx.lineTo(0,baseY);
+    let x=0,y=baseY;
+    while(x<W){
+      x+=24+r()*46;
+      y=baseY - r()*amp;
+      ctx.lineTo(x,y);
+    }
+    ctx.lineTo(W,baseY);
+    ctx.lineTo(W,H);
+    ctx.closePath();
+    ctx.fillStyle=color;
+    ctx.fill();
+  }
+  ridge(H*0.62, H*0.10, 91, mid);
+  ridge(H*0.70, H*0.14, 733, deep);
+
+  /* distant tower silhouettes */
+  function tower(x,baseY,h){
+    ctx.strokeStyle=deep;ctx.lineWidth=1.2;
+    ctx.beginPath();ctx.moveTo(x,baseY);ctx.lineTo(x,baseY-h);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(x-9,baseY-h*0.62);ctx.lineTo(x+9,baseY-h*0.62-4);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(x-6,baseY-h*0.3);ctx.lineTo(x+7,baseY-h*0.36);ctx.stroke();
+  }
+  tower(W*0.72,H*0.66,H*0.24);
+  tower(W*0.78,H*0.665,H*0.15);
+  tower(W*0.135,H*0.615,H*0.10);
+
+  /* sensor-detected glow points, drawn in the mode's own line-art color */
+  function blip(x,y,r){
+    const g=ctx.createRadialGradient(x,y,0,x,y,r);
+    g.addColorStop(0,'rgba(61,220,151,.95)');
+    g.addColorStop(1,'rgba(61,220,151,0)');
+    ctx.fillStyle=g;
+    ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
+  }
+  blip(W*0.245,H*0.665,10);
+  blip(W*0.87,H*0.70,6);
+})();
+
+/* ---- shared subtle noise grain, drawn once per view in its own hue ---- */
+function grain(id,rgb){
+  const cv=document.getElementById(id);
+  const ctx=cv.getContext('2d');
+  const img=ctx.createImageData(cv.width,cv.height);
+  for(let i=0;i<img.data.length;i+=4){
+    const v=Math.random()*255;
+    img.data[i]=rgb[0];img.data[i+1]=rgb[1];img.data[i+2]=rgb[2];
+    img.data[i+3]=v*0.5;
+  }
+  ctx.putImageData(img,0,0);
+}
+grain('nightNoise',[61,220,151]);
+grain('irNoise',[232,53,42]);
+})();
+</script>

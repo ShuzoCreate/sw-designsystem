@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISB — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#EDEEF0; --t-panel:#CDD0D4; --t-ink:#0B0C0E;
+  --t-soft:#6B6F74; --t-faint:#6B6F74; --t-accent:#B87F1E;
+  --t-accent-ink:#fff; --t-line:#9BA0A6;
+  --t-rs:0px; --t-rl:0px;
+  --t-case:uppercase; --t-track:.18em;
+  --t-disp:'Saira Condensed', 'Roboto Condensed', sans-serif;
+  --t-mono:'IBM Plex Mono', 'Share Tech Mono', monospace;
+  color-scheme:light;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 06 / 14</p>
+    <h1>ISB</h1>
+    <p class="hook">監視官僚の骨白と炭黒</p>
+  </div>
+  <div class="tdesc"><p>『アンドー』の帝国保安局（ISB）本部。監視盤、勤務フロアの埋込端末、会議室のスクリーン。骨白の儀礼レジスタと炭黒の実務レジスタの2層で、データは発射されず台帳に綴じられる。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/isb.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/isb.html" title="ISB showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/isb.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/isb.html" loading="lazy" title="ISB conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#EDEEF0;color:#111">#EDEEF0</div><div class="tok">white</div></div><div class="chip-swatch"><div class="well" style="background:#CDD0D4;color:#111">#CDD0D4</div><div class="tok">white-shadow</div></div><div class="chip-swatch"><div class="well" style="background:#9BA0A6;color:#111">#9BA0A6</div><div class="tok">grey</div></div><div class="chip-swatch"><div class="well" style="background:#0B0C0E;color:#fff">#0B0C0E</div><div class="tok">lacquer</div></div><div class="chip-swatch"><div class="well" style="background:#3C4046;color:#fff">#3C4046</div><div class="tok">glass</div></div><div class="chip-swatch"><div class="well" style="background:#E8A33C;color:#111">#E8A33C</div><div class="tok">data-amber</div></div><div class="chip-swatch"><div class="well" style="background:#D93A2B;color:#fff">#D93A2B</div><div class="tok">signal-red</div></div><div class="chip-swatch"><div class="well" style="background:#85888C;color:#fff">#85888C</div><div class="tok">cog-grey</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>label</td><td>Saira Condensed</td><td>0.66rem / 500</td></tr><tr><td>numeric</td><td>IBM Plex Mono</td><td>0.78rem / 400</td></tr><tr><td>aurebesh</td><td>Aurebesh</td><td>0.7rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>none</td><td>0px</td></tr><tr><td>ring</td><td>999px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>xs</td><td>4px</td></tr><tr><td>sm</td><td>8px</td></tr><tr><td>md</td><td>14px</td></tr><tr><td>lg</td><td>24px</td></tr><tr><td>xl</td><td>44px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>ISBは、『アンドー』に映る帝国保安局の様式である。核となるイメージは<strong>無彩色の連続階調で語る官僚制建築</strong>。会議室や聴聞室のような儀礼の空間は、白灰のファセット（三角形の低浮彫）を稀少な仕上げとして持つ明るいモノリスであり、制服の白い人間までもがその表面の一部になる。一方、監視室やワークステーション区画のような実務の空間は、チャコール〜黒がほぼ全面を占め、白は輪郭を締める細い縁光としてのみ現れる。データは暗端の中で琥珀に微光し、警告は赤い点として刺さる。</p>
+<p>kuat-sienar（軍・艦載）が「統治の精度の誇示」なら、ISBは<strong>監視官僚制の大聖堂</strong>である。装飾はなく、しかし貧相でもない — 幾何学の反復そのものが権威を語る。温かみは存在しない。柔らかさも存在しない。硬質、清潔、完全。</p>
+<p><strong>この様式の洗練は「引き算」から生まれる。</strong> ファセット浮彫は聴聞室の壁のような特別な瞬間にのみ、ごく控えめに現れる仕上げであり、画面を埋め尽くす繰り返し柄ではない。素面の無地こそが基本であること。同様に、白が常に主役とは限らない — 監視室やワークステーション区画はチャコール〜黒がほぼ全面を占め、白は輪郭を締める細い縁光としてのみ現れる。<strong>どちらの明暗に振るかは空間の格で選び、グレースケールの階調で語る</strong>（白か黒かの二択ではない）。この引き算と諧調の精度こそが「一昔前のジオメトリック背景パターン」から遠ざける唯一の道である。</p>
+<h2>Colors</h2>
+<p>パレットは「white→lacquerの連続した無彩色の階調 ＋ 微小な信号」。5色の無彩色トークンは<strong>離散した2色（白／黒）ではなく、ひとつづきの明度スケール</strong>として扱う。</p>
+<ul>
+<li><strong>white (#EDEEF0) → white-shadow (#CDD0D4) → grey (#9BA0A6) → glass (#3C4046) → lacquer (#0B0C0E):</strong> 明から暗への連続階調。<strong>冷たい中性色</strong>（温かみのある骨白・クリームは誤り）。</li>
+</ul>
+<p><strong>空間の格で、この階調のどこを主役にするかが決まる（2レジスタ）：</strong></p>
+<ul>
+<li><strong>儀礼レジスタ</strong>（会議室、聴聞室前室）: white / white-shadow が支配的。lacquerは家具・スクリーン筐体としてごく少量、硬い塊として置かれる。</li>
+<li><strong>実務レジスタ</strong>（監視室、ワークステーション区画）: glass / lacquer が支配的。white は縁を締める細い輪郭線（edge-light）としてのみ現れる — 面としては使わない。</li>
+</ul>
+<p>どちらのレジスタでも、<strong>使う階調は隣接する2〜3段に絞る</strong>（whiteといきなりlacquerを同じ画面で同格に対比させない）。段を飛ばさず滑らかに移行することが「洗練」であり、極端な白黒二値は素人っぽさの原因になる。</p>
+<ul>
+<li><strong>data-amber (#E8A33C):</strong> データの琥珀。暗い面（glass/lacquer）の中の小さな読み出しにのみ。</li>
+<li><strong>signal-red (#D93A2B):</strong> 警告・稼働中の赤い点。ドット単位で使う。</li>
+<li><strong>cog-grey (#85888C):</strong> アイドル画面の帝国コグ。glass面に低コントラストで。</li>
+</ul>
+<p>明るい面の上に彩色を置かない — 色（琥珀・赤）は必ず glass・lacquer などスケールの暗端の中に封じられる。</p>
+<h2>Typography</h2>
+<ul>
+<li>コンデンス大文字・極広トラッキング、ウェイトはやや強め（500）— 硬質な刻印。</li>
+<li>明るい面の上の文字は grey/lacquer の無彩色のみ。暗い面の上の文字は white/grey。彩色文字（琥珀）は暗端の中だけ。</li>
+<li>数値は等幅で少量。台帳は疎ら（数行、広い行間）— 情報を出し惜しむ者が情報を持つ者である。</li>
+<li>オーレベッシュは銘板・部署コードとして少量。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>円環と放射が第一幾何。</strong> 円環のテーブル、扇形の座席、放射状の天井ルーバー。ISBの部屋は円と放射でできており、直交グリッドは従属的。</li>
+<li><strong>レジスタごとに地と図が反転する。</strong> 儀礼レジスタでは明るい面が地、lacquerの塊が図。実務レジスタではglass/lacquerが地、edge-lightで縁取られた要素が図。1つの画面内でレジスタを混在させない。</li>
+<li>対称・求心的な構図。中心に向かって権力が集まる部屋の構造をそのまま使う。</li>
+<li><strong>余白は無地であることが基本。</strong> テクスチャ（facet-wall）は例外的なごちそうであり、常時働いているものではない。空白を埋めたくなったら、まず「本当に埋める必要があるか」を疑う。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li><strong>深度は諧調の推移。</strong> 明暗スケールを隣接ステップで移行させることで浅い立体感を作る（whiteからwhite-shadowへ、glassからlacquerへ）。段を飛ばした急な明暗差は使わない。</li>
+<li><strong>黒い塊はedge-lightで締める。</strong> lacquer/glassの暗い塊は、縁に沿った細い白／grey の輪郭線（edge-light）でシルエットを明確にする。ソフトなグローや周辺減光ではなく、精密な1本の線であること — これが「しまった黒」を作る唯一の方法。</li>
+<li>黒漆の面は鏡面反射（微かなハイライト）を持つ。</li>
+<li><strong>発光・グローは存在しない。</strong> 琥珀のデータも「点灯」であって「発光」ではない — 滲まない。</li>
+<li>儀礼レジスタでは天井のサンバースト（放射ルーバー、1空間に1基のみ）が光源。実務レジスタは環境光が冷たく低く、光源は画面内に写り込まない。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>鋭い直線と完全な円環。</strong> 角丸なし。曲線は円環と放射にのみ許される。</li>
+<li><strong>ファセット（三角形の低浮彫）は稀少な署名要素。</strong> コントラストは低く（隣接する2階調のみ）、スケールは細かく、儀礼レジスタの特定の壁面1箇所程度に留める。画面全体のタイル壁紙にしない — それは幾何学模様の背景パターンであり、この様式の無機質さを損なう。</li>
+<li><strong>放射ルーバー</strong>（sunburst-crown）: 48枚以上の白い羽根が環状に並ぶ王冠。1構成に1基のみの実際の照明器具として扱う。反復する装飾モチーフではない。</li>
+<li>黒漆の塊は台形・帯・円弧 — 常にハードエッジ、常にedge-lightで縁取る。</li>
+<li>装飾的な切り欠き・ブラケット・チャンファーは一切ない。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>facet-wall:</strong> 三角形低浮彫の白灰テクスチャ。<strong>低コントラスト・細かいスケール・稀少使用</strong>（1画面に多くて1箇所、儀礼レジスタの壁面のみ）。ページ全体の地には使わない。</li>
+<li><strong>sunburst-crown:</strong> 放射状ルーバーの環。1構成に1基、実在の照明器具として。見出し・中心要素の背後に象徴的に使うのは可だが複数配置しない。</li>
+<li><strong>edge-light:</strong> 暗い塊の輪郭を締める細い白／grey の一本線。ソフトなグローの代替であり、精密さの担保。</li>
+<li><strong>lacquer-inlay:</strong> 黒漆のスラブ。ハードエッジ、微かな鏡面、edge-light併用。スクリーン・データ・操作系はすべてこの中に象嵌される。</li>
+<li><strong>cog-idle:</strong> glass面のコグ透かし。無操作のスクリーンの標準状態。</li>
+<li><strong>indicator-dots:</strong> 琥珀・赤の微小ドット列。黒漆の縁に沿って疎らに。</li>
+<li><strong>ring-layout:</strong> 円環＋放射の構図テンプレート。中央に主題、環状に従属要素。</li>
+<li><strong>data-ledger:</strong> 黒漆内の琥珀の台帳。数行・広い行間・滲まない点灯。</li>
+<li><strong>データ表示（チャート）:</strong> 黒漆の中でも「彩色は点」を守る — 柱はglassの灰、琥珀は値ラベル・現在値マーカーの点にのみ。琥珀の大きな塗り面はこの様式の禁欲を壊す。可能なら円環・放射（リング進捗、扇形配分）を優先する。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>明暗スケールを隣接ステップで使い、儀礼／実務のレジスタで主役の階調を切り替える</li>
+<li>ファセットは稀少・低コントラストな署名要素として、多くて1画面1箇所に留める</li>
+<li>黒い塊はedge-light（細い一本線）で締める — ソフトなグローではなく精密な輪郭で</li>
+<li>円環と放射で構図を組む</li>
+<li>彩色（琥珀・赤）は暗端の中に封じ、点として使う</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>温かい白（クリーム・ボーン）にしない — 冷たい中性の無彩色であること</li>
+<li>ファセットや幾何学模様を画面全体のタイル壁紙・背景パターンにしない（それは量産テンプレートの意匠であり、この様式の無機質な洗練を壊す）</li>
+<li>白と黒をいきなり同格に対比させない（段を飛ばした二値化は素人っぽさの原因）</li>
+<li>発光・グロー・滲みを使わない（点灯はするが発光はしない）</li>
+<li>明るい面の上に彩色を直接置かない</li>
+<li>角丸・チャンファー・装飾切り欠きを使わない</li>
+<li>レジスタを混同しない — 儀礼レジスタで黒を主役にしない、実務レジスタで白を面として広げない（実務空間ではglass/lacquerが多数派で正しい）</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/isb/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

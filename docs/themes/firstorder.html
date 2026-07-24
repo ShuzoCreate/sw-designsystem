@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Order — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#08080B; --t-panel:#101017; --t-ink:#C9CED6;
+  --t-soft:#7A7E86; --t-faint:#6A6F7A; --t-accent:#FF1F2F;
+  --t-accent-ink:#fff; --t-line:#3A3F49;
+  --t-rs:0px; --t-rl:0px;
+  --t-case:uppercase; --t-track:.18em;
+  --t-disp:'Saira Condensed', 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  --t-mono:'IBM Plex Mono', 'Share Tech Mono', monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 03 / 14</p>
+    <h1>First Order</h1>
+    <p class="hook">黒曜ガラスと血赤の線</p>
+  </div>
+  <div class="tdesc"><p>シークエル三部作のファースト・オーダー艦内 — スターキラー基地の管制室、メガ級デストロイヤー・スプレマシーの艦橋。帝国美学を先鋭化させた黒曜ガラスの様式。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/firstorder.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/firstorder.html" title="First Order showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/firstorder.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/firstorder.html" loading="lazy" title="First Order conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#08080B;color:#fff">#08080B</div><div class="tok">background</div></div><div class="chip-swatch"><div class="well" style="background:#101017;color:#fff">#101017</div><div class="tok">gloss</div></div><div class="chip-swatch"><div class="well" style="background:#FF1F2F;color:#fff">#FF1F2F</div><div class="tok">crimson</div></div><div class="chip-swatch"><div class="well" style="background:#5A0F14;color:#fff">#5A0F14</div><div class="tok">crimson-dim</div></div><div class="chip-swatch"><div class="well" style="background:#C9CED6;color:#111">#C9CED6</div><div class="tok">steel</div></div><div class="chip-swatch"><div class="well" style="background:#3A3F49;color:#fff">#3A3F49</div><div class="tok">steel-dim</div></div><div class="chip-swatch"><div class="well" style="background:#3E55FF;color:#fff">#3E55FF</div><div class="tok">cobalt</div></div><div class="chip-swatch"><div class="well" style="background:#FFD23A;color:#111">#FFD23A</div><div class="tok">signal</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>display</td><td>Saira Condensed</td><td>1.4rem / 500</td></tr><tr><td>label</td><td>Saira Condensed</td><td>0.68rem / 400</td></tr><tr><td>numeric</td><td>IBM Plex Mono</td><td>0.85rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>none</td><td>0px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>xs</td><td>3px</td></tr><tr><td>sm</td><td>6px</td></tr><tr><td>md</td><td>10px</td></tr><tr><td>lg</td><td>18px</td></tr><tr><td>xl</td><td>30px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>First Orderは、スターキラー基地・フィナライザー・スプレマシーの艦内に見られるファースト・オーダーの様式である。銀河帝国の系譜を継ぎながら、より冷たく、より静かに、より精密に研ぎ澄まされている。</p>
+<p>大原則は <strong>「黒曜石の板に、血で引いたヘアライン」</strong>。スクリーンは磨かれた黒ガラスであり、そこに1pxの赤い線が完璧な精度で走る。holonetの線が「情報の光」なら、First Orderの線は「監視の光」である。飾りは一切なく、対称と反復と直線だけが権威を語る。ユーザーを歓迎しない — 従わせるUIである。</p>
+<h2>Colors</h2>
+<p>パレットは「黒2階調 ＋ 赤2階調 ＋ 鋼2階調 ＋ 限定信号色2」。</p>
+<ul>
+<li><strong>background (#08080B):</strong> 漆黒。青みを帯びた黒曜石。</li>
+<li><strong>gloss (#101017):</strong> モジュール内部の面。光沢の気配だけ僅かに明るい。</li>
+<li><strong>crimson (#FF1F2F):</strong> 主役の血赤。追跡グリッド、データ線、警告。この様式の「インク」。</li>
+<li><strong>crimson-dim (#5A0F14):</strong> 赤の残light。非アクティブ、グリッド補助線、消灯ドット。</li>
+<li><strong>steel (#C9CED6):</strong> 鋼の白。構造線、モジュール見出し、罫線。赤より一段「事務的」な情報。</li>
+<li><strong>steel-dim (#3A3F49):</strong> 鋼の影。枠線、区切り。</li>
+<li><strong>cobalt (#3E55FF):</strong> スキーマティック専用の青。機関図・回路図にのみ現れる。</li>
+<li><strong>signal (#FFD23A):</strong> 追跡対象のマーカー黄。画面内に一点だけ許される最大強調。</li>
+</ul>
+<p>運用: 黒が80%、crimson系 12%、steel系 6%、cobalt/signal 2%。<strong>緑は存在しない</strong> — この様式に「承認」の色はなく、正常は沈黙（消灯）で示す。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>コンデンス（縦長）サンセリフ、極端に広いトラッキング</strong>（0.3em以上）。大文字のみ。文字を一つずつ引き離して刻印する、規律の文字組み。</li>
+<li>見出しはsteel、データ値はcrimson。色で「構造／内容」を分ける。</li>
+<li>数値は等幅（IBM Plex Mono系）で小さく、桁を揃えて列にする。</li>
+<li>文字は小さくてよい。読ませるためではなく、記録されていることを示すための文字である。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>モジュールの反復。</strong> 同寸の矩形モジュールを規則正しく敷き詰める。holonetの非対称な寄せ集め感を排し、完全なグリッド整列。</li>
+<li><strong>密度は高く、しかし静か。</strong> 要素は多いが、各要素の主張は最小。アクティブな箇所だけがcrimsonに点る。</li>
+<li>中央に主ビューポート（追跡グリッド）、両翼に細いデータ列という対称構成が基本。</li>
+<li>ヘッダは細い罫線1本とラベルのみ。飾り帯は使わない。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li>深度は<strong>ガラスの光沢</strong>で示す。面の端にわずかなハイライト（steelの1pxエッジ）、要素自体に影はない。</li>
+<li>crimsonのグローは最小限 — 鋭く滲まない発光。holonetより硬く、vectorscopeより細い。</li>
+<li>レイヤーは明度でなく<strong>点灯/消灯</strong>で区別する。手前=点灯（crimson）、奥=残光（crimson-dim）。</li>
+<li>反射・映り込みの気配（微かな縦のハイライト）は様式の一部。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>完全な直角。</strong> 角丸ゼロ。チャンファーすら使わない（それは民間のholonet）。矩形、台形、細長い帯だけで構成する。</li>
+<li><strong>ヘアライン（1px）主義。</strong> 線は常に細く、正確に。太線は存在しない。</li>
+<li><strong>ドットの列。</strong> 状態表示は正方形に近い小さなドット／短冊の整列（dot-column）。点灯パターンが唯一の「動き」。</li>
+<li>台形の切り落とし（コンソール筐体の角度）は許されるが、装飾的ノッチは不可。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>module:</strong> steel-dimの1px枠＋glossの面＋steelの小さな見出し。同寸で敷き詰める基本単位。<strong>内容物で満たすこと</strong> — ドット列やストリップは筐体の高さいっぱいまで反復させる。空隙の目立つモジュールは規律の欠如に見え、この様式を壊す。</li>
+<li><strong>tracking-grid:</strong> crimsonのヘアラインによる透視／球面グリッド。補助線はcrimson-dim。追跡対象はsignal黄の塊で、画面内に一つだけ。</li>
+<li><strong>dot-column:</strong> crimsonドットの縦列インジケータ。点灯/消灯のパターンで状態を伝える。</li>
+<li><strong>schematic:</strong> cobalt線の機関図・回路図。crimsonのオーバーレイで注記が重なる。</li>
+<li><strong>status-strip:</strong> 唯一の塗り面。crimsonの帯に黒の大文字。警告・封鎖・命令の表示専用。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>1pxのヘアラインで、完璧な直線と対称を保つ</li>
+<li>正常状態を沈黙（消灯・crimson-dim）で、異常だけをcrimsonで語らせる</li>
+<li>モジュールを同寸で反復し、規律を見せる</li>
+<li>signal黄は画面に一点だけ — 追跡対象、最重要マーカーのみ</li>
+<li>黒ガラスの光沢（微かなエッジハイライト）を残す</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>角丸・チャンファー・ノッチなどの造形的装飾を使わない</li>
+<li>緑を使わない（承認・安全の色はこの様式に存在しない）。汎用UIの状態表示は <strong>正常=沈黙（steel-dim/消灯）、注意=steelの輪郭、遮断・警告=crimsonの塗り</strong> に写像する。signal黄はバッジ色ではなく「追跡中の一件」専用</li>
+<li>太い線、強いグロー、にじみを使わない</li>
+<li>非対称なコラージュ的レイアウトにしない（それはholonet/vectorscope）</li>
+<li>温かみのある色、人間味のある書体を持ち込まない</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/firstorder/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

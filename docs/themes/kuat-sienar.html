@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kuat-Sienar — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#0A0D0C; --t-panel:#12181A; --t-ink:#EDF2F4;
+  --t-soft:#7FB0FF; --t-faint:#5578B8; --t-accent:#59E87F;
+  --t-accent-ink:#111; --t-line:#3D63C4;
+  --t-rs:0px; --t-rl:0px;
+  --t-case:uppercase; --t-track:.18em;
+  --t-disp:Michroma, Orbitron, Eurostile, sans-serif;
+  --t-mono:'Share Tech Mono', 'JetBrains Mono', monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 07 / 14</p>
+    <h1>Kuat-Sienar</h1>
+    <p class="hook">帝国艦隊の単色管制</p>
+  </div>
+  <div class="tdesc"><p>『ローグ・ワン』『アンドー』期の帝国艦隊に遍在する艦載管制画面。スター・デストロイヤー（クワット・ドライヴ・ヤーズ製）とTIE（シエナー・フリート・システムズ製）の航行・索敵・兵装表示。1画面1色相の規律（緑=航行・赤=兵装・青=索敵）を持つ。勢力名でなくメーカー連名なのは「帝国全体の標準」と主張しないため。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/kuat-sienar.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/kuat-sienar.html" title="Kuat-Sienar showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/kuat-sienar.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/kuat-sienar.html" loading="lazy" title="Kuat-Sienar conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#0A0D0C;color:#fff">#0A0D0C</div><div class="tok">background</div></div><div class="chip-swatch"><div class="well" style="background:#121815;color:#fff">#121815</div><div class="tok">surface</div></div><div class="chip-swatch"><div class="well" style="background:#59E87F;color:#111">#59E87F</div><div class="tok">green</div></div><div class="chip-swatch"><div class="well" style="background:#FF4726;color:#fff">#FF4726</div><div class="tok">red</div></div><div class="chip-swatch"><div class="well" style="background:#7FB0FF;color:#111">#7FB0FF</div><div class="tok">blue</div></div><div class="chip-swatch"><div class="well" style="background:#3D63C4;color:#fff">#3D63C4</div><div class="tok">blue-wedge</div></div><div class="chip-swatch"><div class="well" style="background:#EDF2F4;color:#111">#EDF2F4</div><div class="tok">white</div></div><div class="chip-swatch"><div class="well" style="background:#9C8FE8;color:#111">#9C8FE8</div><div class="tok">lavender</div></div><div class="chip-swatch"><div class="well" style="background:#E8A33C;color:#111">#E8A33C</div><div class="tok">amber</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>aurebesh</td><td>Aurebesh</td><td>0.85rem / 400</td></tr><tr><td>label</td><td>Michroma</td><td>0.6rem / 400</td></tr><tr><td>numeric</td><td>Share Tech Mono</td><td>0.82rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>none</td><td>0px</td></tr><tr><td>frame</td><td>14px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>xs</td><td>4px</td></tr><tr><td>sm</td><td>8px</td></tr><tr><td>md</td><td>12px</td></tr><tr><td>lg</td><td>20px</td></tr><tr><td>xl</td><td>32px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>Kuat-Sienarは、ローグ・ワンと『アンドー』に映る帝国艦隊の管制様式である。スター・デストロイヤーの艦橋ピット（クワット・ドライヴ・ヤーズ建造）、TIEファイターのコックピット（シエナー・フリート・システムズ製）、デス・スターの兵器管制 — これらの計器盤は機体を製造した軍需メーカーが機体と一緒に納品するものであり、様式は勢力ではなく<strong>メーカー群のデザイン言語</strong>として銀河に流通している。帝国はその最大の顧客というだけだ（だからこの名は「帝国全体の標準UI」を主張しない — ISBの白いオフィス端末や旧式のvectorscope系CRTも帝国内に併存する）。連名はSienar-JaemusやKuat-Entrallaと同じ、銀河企業の命名文法に倣う。</p>
+<p>帝国艦のスクリーンは装飾のためでなく<strong>統治の精度を誇示するため</strong>にある。理路整然とし、無機質で、冷たく美しい。</p>
+<p>3つの原則：</p>
+<p>1. <strong>1画面1色相の単色システム。</strong> ステーションごとに任務の色（緑=航行/機関、赤=兵装/警戒、青=索敵/照準、白=計測）が与えられ、その画面はその色相だけで描かれる。vectorscopeの「1ビューポート1フォスファー」の直系だが、太いブラウン管の素朴さではなく—— 2. <strong>ヘアラインの精密幾何。</strong> 1pxの線が、頂点から放射する扇、等間隔の目盛り、完全な同心円を描く。手描きの揺らぎは存在しない。 3. <strong>塗りは扇形で。</strong> 面の塗りは半透明のウェッジ（扇形・楔形）として現れる。レンジの範囲、出力の割合 — 量は角度と面積で語られる。</p>
+<p>firstorderはこの様式の直系の末裔である（imperialから曲線と多色を奪い、赤だけを残したもの）。</p>
+<h2>Colors</h2>
+<p>パレットは「黒＋任務色4系統＋補助2色」。<strong>同時に使うのではなく、パネルごとに1色相を選ぶ</strong>。</p>
+<ul>
+<li><strong>background (#0A0D0C):</strong> かすかに緑がかった黒。艦の消灯面。</li>
+<li><strong>surface (#121815):</strong> パネル内部の面。ごくわずかに持ち上げる。</li>
+<li><strong>green (#59E87F):</strong> 航行・機関・船体状態。ISD制御盤の線画。</li>
+<li><strong>red (#FF4726):</strong> 兵装・警戒・封鎖。帝国の象徴色。橙寄りの赤。</li>
+<li><strong>blue (#7FB0FF) / blue-wedge (#3D63C4):</strong> 索敵・照準・レンジ。線はblue、塗りウェッジはblue-wedge（同系統の暗色 — トーンで分離）。</li>
+<li><strong>white (#EDF2F4):</strong> 計測・基準線・中立データ。白い放射ダイヤル。amberと同様に、<strong>どのパネルにも基準線・輪郭として少量置ける例外色</strong>（青のレンジファンに白のISD線画と基準線、など）。</li>
+<li><strong>lavender (#9C8FE8):</strong> whiteパネルの補助アクセント（インジケータ、選択状態）。</li>
+<li><strong>amber (#E8A33C):</strong> オーレベッシュの銘・注記専用。どのパネルにも少量置ける唯一の色。</li>
+</ul>
+<p>対比色は1パネルに1つまで（緑の線画に赤の充填ゲージ、青のレンジに赤の目標マーカー）。3色相目は存在しない。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>オーレベッシュが実務の文字。</strong> ラベル・注記・数値はオーレベッシュ主体（amberまたはパネル色相）。ラテンは運用上の最小限（このテーマを汎用UIに適用する場合のみ、Michroma系の大文字・極広トラッキングを許す）。</li>
+<li><strong>オーレベッシュの代替</strong>: 実フォントが利用できない場合は省略せず、短い直線・対角線の線分をグリッド上に組んだ擬似グリフをSVGで生成して装飾に用いる（テキストの置換ではなく併記・装飾として）。</li>
+<li>本文段落が存在する数少ない様式（保安局の報告書端末）。オーレベッシュの整然としたテキストブロックを、細い行間で組む。</li>
+<li>数値は等幅。目盛りに沿って小さく、機械的に。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>パネル＝ステーション。</strong> 各パネルは任務単位で、自分の色相を持つ。1画面に複数パネルを並べる場合も、パネル間で色相が混ざらない。</li>
+<li><strong>放射と対称。</strong> 主役のグラフィックは頂点・中心から放射する（扇、リング、レンジファン）。左右対称のペア構成（Empire UIの左右パネル）を好む。</li>
+<li>縁は目盛り（不等間隔の測量目盛り）、ドットグリッド、小さな状態チップで縁取る。</li>
+<li>密度は高いが、holonet-aurekのような装飾の飽和ではなく、<strong>計測器の必然としての密度</strong>。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li>深度はほぼゼロ。すべて同一のガラス面。</li>
+<li>塗りウェッジの半透明の重なりだけが唯一の「層」。重なりは同系色の濃淡で表現する。</li>
+<li>グローは色相ごとに控えめに。redのみやや強い発光を許す（警戒の色だから）。</li>
+<li>影・ぼかし・グラデーション装飾は存在しない。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>角丸フレーム（frame = 14px）＋タブ切り欠き。</strong> 帝国の枠は角が丸い（Empire UIの赤枠）。角丸の途中にタブ・段差・切り欠きが入る。チャンファーは使わない（それはholonet系）。</li>
+<li><strong>放射扇（radial-fan）。</strong> 1本の頂点から数十本のヘアラインが扇状に開く。</li>
+<li><strong>六角形・シェブロン。</strong> 六角の環、山形（chevron）の入れ子。円よりも六角を好む。</li>
+<li><strong>台形チップ。</strong> 状態表示は台形の小片の列（塗り/輪郭の2状態）。</li>
+<li><strong>ピルセグメント。</strong> 強い発光を持つ丸端の短冊が数珠つなぎになる。</li>
+<li>白い基準線は水平・垂直・斜めの完全な直線のみ。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>station-panel:</strong> 角丸＋タブ切り欠きの枠。パネル色相の1.5px線。内部はbackground（塗り面はウェッジのみ）。</li>
+<li><strong>radial-fan:</strong> 頂点から放射するヘアライン群。レンジファン、走査扇、装飾格子。</li>
+<li><strong>range-wedge:</strong> 半透明の塗り扇形。レンジ・出力・カバレッジの量的表示。輪郭1px＋塗り。</li>
+<li><strong>ring-dial:</strong> 60本以上の放射ティックで構成される円環計器。中心にオーレベッシュの略号。</li>
+<li><strong>segment-pill:</strong> 発光する丸端短冊の列。エネルギー流・進行の表示。</li>
+<li><strong>trapezoid-chip:</strong> 台形の状態チップ列。塗り=活性、輪郭=待機。</li>
+<li><strong>dot-grid:</strong> 小ドットの行列。多数の系統の一括状態表示。</li>
+<li><strong>tick-ruler:</strong> 不等間隔の測量目盛り。基準値の位置だけ長い。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>パネルごとに任務色1色相を選び、それだけで描く（対比1色まで）</li>
+<li>量は角度と面積（ウェッジ）で示す</li>
+<li>放射・対称・等間隔 — 幾何学の規律を守る</li>
+<li>オーレベッシュを実務の文字として使い、amberの銘を添える</li>
+<li>角丸フレームにタブと切り欠きを入れる</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>複数の任務色を1パネルに混ぜない</li>
+<li>線を太らせない（太線はvectorscopeの素朴さ。帝国は常にヘアライン）</li>
+<li>チャンファー・ブラケット・多段ノッチを使わない（それはholonet系の民間装飾）</li>
+<li>有機的な曲線・手描きの揺らぎを持ち込まない</li>
+<li>汎用UIに適用する場合、状態色は任務色の割当に従わせる（成功/失敗の慣習色より任務の色相が優先）</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/kuat-sienar/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

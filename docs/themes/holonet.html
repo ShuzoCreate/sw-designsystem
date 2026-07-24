@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HoloNet — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#04070D; --t-panel:#0A1420; --t-ink:#D8F4FF;
+  --t-soft:#5BD8FF; --t-faint:#4A90D9; --t-accent:#5BD8FF;
+  --t-accent-ink:#111; --t-line:#2E7BFF;
+  --t-rs:0px; --t-rl:0px;
+  --t-case:uppercase; --t-track:.18em;
+  --t-disp:Michroma, Orbitron, Eurostile, sans-serif;
+  --t-mono:'Share Tech Mono', 'JetBrains Mono', monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 01 / 14</p>
+    <h1>HoloNet</h1>
+    <p class="hook">銀河標準のダーク×ネオン</p>
+  </div>
+  <div class="tdesc"><p>プリクエルからシークエルまで、時代も陣営も問わず最も広く映る銀河の標準様式。ミレニアム・ファルコンや反乱軍艦橋のディスプレイ、ジェダイ・アーカイブの端末、『クローン・ウォーズ』『バッド・バッチ』の艦内モニタ、そしてギャラクシーズ・エッジの決済端末やライド内スクリーンまで、同じ言語が貫かれている。名は銀河標準通信網HoloNetから。実用に耐えるバランス版。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/holonet.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/holonet.html" title="HoloNet showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/holonet.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/holonet.html" loading="lazy" title="HoloNet conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#04070D;color:#fff">#04070D</div><div class="tok">background</div></div><div class="chip-swatch"><div class="well" style="background:#0A1420;color:#fff">#0A1420</div><div class="tok">surface</div></div><div class="chip-swatch"><div class="well" style="background:#5BD8FF;color:#111">#5BD8FF</div><div class="tok">primary</div></div><div class="chip-swatch"><div class="well" style="background:#2E7BFF;color:#fff">#2E7BFF</div><div class="tok">line</div></div><div class="chip-swatch"><div class="well" style="background:#1B3A55;color:#fff">#1B3A55</div><div class="tok">muted</div></div><div class="chip-swatch"><div class="well" style="background:#3BE86A;color:#111">#3BE86A</div><div class="tok">affirm</div></div><div class="chip-swatch"><div class="well" style="background:#FFB53D;color:#111">#FFB53D</div><div class="tok">caution</div></div><div class="chip-swatch"><div class="well" style="background:#FF3B30;color:#fff">#FF3B30</div><div class="tok">alert</div></div><div class="chip-swatch"><div class="well" style="background:#D8F4FF;color:#111">#D8F4FF</div><div class="tok">text</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>display</td><td>Michroma</td><td>1.5rem / 400</td></tr><tr><td>label</td><td>Michroma</td><td>0.75rem / 400</td></tr><tr><td>numeric</td><td>Share Tech Mono</td><td>1rem / 400</td></tr><tr><td>aurebesh</td><td>Aurebesh</td><td>0.7rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>none</td><td>0px</td></tr><tr><td>sm</td><td>2px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>xs</td><td>4px</td></tr><tr><td>sm</td><td>8px</td></tr><tr><td>md</td><td>12px</td></tr><tr><td>lg</td><td>20px</td></tr><tr><td>xl</td><td>32px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>HoloNetは、スター・ウォーズの銀河でもっとも普及したスクリーンUIの標準様式である。反乱軍の作戦室からアウター・リムの決済端末まで、時代（プリクエル〜シークエル）と場所を問わず現れる。共和国とも帝国とも紐付かない、いわば銀河ベーシック標準語の視覚版。</p>
+<p>大原則は <strong>「暗闇の中で、光る線そのものが情報である」</strong>。スクリーンは常に暗い環境（コックピット、艦橋、酒場のカウンター）で光ることを前提とし、UIは面の塗りではなく発光するストローク（線・文字・目盛り）で構成される。背景は表示面ではなく「無」であり、そこに引かれた線がすべての意味を担う。</p>
+<p>これは現代のフラットデザインの再解釈ではない。ベクタースキャンCRTとオシロスコープの語彙 — ワイヤーフレーム、レーダー掃引、セグメントゲージ — を持つレトロフューチャーな計器盤である。</p>
+<h2>Colors</h2>
+<p>パレットは「漆黒の地 ＋ 発光する数色」で構成され、<strong>色は装飾ではなく意味論</strong>である。</p>
+<ul>
+<li><strong>background (#04070D):</strong> ごくわずかに青みを帯びた漆黒。画面の70〜85%を占める。純黒 (#000) より一段浮いた「通電しているガラス」の色。</li>
+<li><strong>surface (#0A1420):</strong> パネル内部をわずかに持ち上げる暗青。使うのは階層を示す最小限の場面のみ。</li>
+<li><strong>primary (#5BD8FF):</strong> シアン。本文テキスト、アイコン、アクティブなゲージ、グリッドの主線。この様式の「インク」。</li>
+<li><strong>line (#2E7BFF):</strong> 深いブルー。パネル枠、構造線、ワイヤーフレームの輪郭。primaryより一段沈み、構造と内容を描き分ける。</li>
+<li><strong>muted (#1B3A55):</strong> 非アクティブ。消灯セグメント、グリッド補助線、待機状態。</li>
+<li><strong>affirm (#3BE86A):</strong> グリーン。承認・完了・味方・航行クリア。「APPROVED」の帯、味方機マーカー。</li>
+<li><strong>caution (#FFB53D):</strong> アンバー。注意・スキャン中・照準過程。レーダーの掃引扇、追尾中の目標。</li>
+<li><strong>alert (#FF3B30):</strong> レッド。敵性・警告・拒否。敵機マーカー、警告テキスト。</li>
+<li><strong>text (#D8F4FF):</strong> 発光する白（シアンの残光を含む）。最重要の見出し語のみ。</li>
+</ul>
+<p>運用比率の目安: background/surface 80%、primary/line 15%、affirm/caution/alert 合わせて5%。アクセント3色は同一ビューに同時に多用しない — 意味が衝突する。</p>
+<p>発光（グロー）は色と同色相で行う。シアンの線にはシアンのにじみ。白いドロップシャドウや無彩色のぼかしは存在しない。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>すべて大文字、ワイドトラッキング。</strong> 見出し (display) は0.18em、ラベル (label) は0.24em。文字は詰めずに「計器の刻印」として置く。</li>
+<li><strong>書体は幾何学的テクノサンセリフ</strong>（Michroma / Orbitron / Eurostile系）。ヒューマニストな丸みや手書き感は禁止。</li>
+<li><strong>数値はモノスペース</strong> (numeric)。座標、残量、クレジット額など、桁が変動しても揺れないこと。</li>
+<li><strong>オーレベッシュの併記</strong> (aurebesh)。見出しの脇や下に小さく添える装飾的コ・ブランディングとして使う。作中ではそれが本文だが、この再現においては雰囲気の担保が役割。ラテン文字なしでオーレベッシュ単独の重要情報を作らない。</li>
+<li><strong>オーレベッシュの代替</strong>: 実フォントが利用できない場合は省略せず、短い直線・対角線の線分をグリッド上に組んだ擬似グリフをSVGで生成して装飾に用いる（テキストの置換ではなく併記・装飾として）。</li>
+<li>長文の段落は存在しない。テキストは常に短いラベル、ステータス語、数値である。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>情報密度は高く、余白はタイト。</strong> これは閲覧するドキュメントではなく監視する計器盤。spacing スケール（4/8/12/20/32px）の範囲で詰める。</li>
+<li><strong>非対称なパネル分割。</strong> メインのビューポート（星図、レーダー、スケマティック）を大きく取り、脇に細いゲージ列・データ列を沿わせる。均等グリッドの整列よりも、機能ブロックの寄せ集め感が正しい。</li>
+<li><strong>縁は目盛りで飾る。</strong> パネルの辺にはティックマーク（目盛り列）、短い座標値、小さな注記が並ぶ。空いた縁は計器の未使用領域であり、装飾で埋めない。</li>
+<li><strong>画面端まで使う。</strong> ステータス行やIDコードは四隅に張り付く。中央寄せの安全マージンという概念はない。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<p><strong>影は存在しない。深度は光で表現する。</strong></p>
+<ul>
+<li>手前・アクティブ = 明るく、強いグロー。奥・非アクティブ = muted に沈む。</li>
+<li>レイヤーの重なりはドロップシャドウではなく、輝度差と輪郭線の有無で描く。</li>
+<li>モーダルやフォーカスは、背後の線の輝度を落とす（消灯に近づける）ことで成立させる。</li>
+<li>ワイヤーフレームの3D表現（透視グリッド、球面グリッド）は奥行きを線の密度と細さで示す。フォグやブラーは使わない。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>角丸ではなくチャンファー（45°の面取り）。</strong> パネルの角は16px程度で斜めに落とす。全角を落とす必要はなく、対角2箇所などの非対称も様式内。</li>
+<li><strong>ノッチと切り欠き。</strong> 枠線の途中に段差・切り欠き・突起を入れ、機械部品の成形物らしさを出す。純粋な矩形は避ける。</li>
+<li><strong>輪郭線ファースト。</strong> 領域は塗りではなく1〜1.5pxの枠線で示す。塗り面を使うのはstatus-chipの帯とゲージのセグメントのみ。</li>
+<li><strong>円は計器として使う。</strong> レーダーの同心円、照準環、球面ワイヤーフレーム。装飾の円形アバターは存在しない。</li>
+<li>角丸 (rounded.sm = 2px) はセグメントやチップの角の「刺さり」を取る用途に限る。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>panel-frame:</strong> チャンファー付きの枠線パネル。1.5pxの line 色ストローク、同色のグロー、内部は background。タイトルは枠の上辺に食い込む形で置き、脇にオーレベッシュを添える。</li>
+<li><strong>gauge-segmented:</strong> イコライザ状の分割バーゲージ。点灯セグメントは primary（状態により affirm/caution/alert）、消灯は muted。連続的なプログレスバーは使わない — 必ず離散セグメント。</li>
+<li><strong>grid-wireframe:</strong> 透視グリッド／レーダー。主線 line、補助線 muted、掃引や照準は caution。マーカーは味方 affirm・敵性 alert のシルエットアイコン。</li>
+<li><strong>status-chip:</strong> 「APPROVED」式の結果表示帯。唯一の大きな塗り面。チャンファー付き矩形に affirm/alert の塗り、白い大文字テキスト。画面の主役として中央に置いてよい。</li>
+<li><strong>button-keypad:</strong> 物理キーパッド由来の押下要素。surface の地に primary の枠と文字。ホバー/押下はグロー強度の変化で表現する。</li>
+<li><strong>divider-tick:</strong> 目盛り列による区切り。実線の代わりに短いティックの繰り返しで領域を区切る。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>線・文字・目盛りを発光させ、それ以外を闇に沈める</li>
+<li>色の意味論を守る（青=情報、緑=肯定、黄=注意、赤=脅威）</li>
+<li>チャンファー、ノッチ、ティックマークで機械的な輪郭を作る</li>
+<li>数値・座標・IDコードを縁に散らして計器感を出す</li>
+<li>グローは常に同色相で</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>塗り面で領域を作らない（status-chipとゲージセグメントを除く）</li>
+<li>ドロップシャドウ、無彩色のぼかし、フォグを使わない</li>
+<li>大きな角丸、カード型UI、グラデーション豊富なモダンスタイルを持ち込まない</li>
+<li>アクセント3色（affirm/caution/alert)を装飾目的で使わない</li>
+<li>小文字の長文、ヒューマニストな書体、ゆったりした余白を使わない</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/holonet/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

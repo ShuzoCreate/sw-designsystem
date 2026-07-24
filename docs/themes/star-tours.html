@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Star Tours — starwars-md</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#0A1030; --t-panel:#1A2A6E; --t-ink:#C9CFD8;
+  --t-soft:#6FCFFF; --t-faint:#6FCFFF; --t-accent:#3F7FFF;
+  --t-accent-ink:#fff; --t-line:#3F7FFF;
+  --t-rs:4px; --t-rl:4px;
+  --t-case:uppercase; --t-track:.18em;
+  --t-disp:sans-serif;
+  --t-mono:monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 08 / 14</p>
+    <h1>Star Tours</h1>
+    <p class="hook">80年代が描いた銀河民間航空</p>
+  </div>
+  <div class="tdesc"><p>ディズニーパークのアトラクション「スター・ツアーズ」の宇宙港。5列の出発案内板、ゲート標示、搭乗案内。1987年の実機プロップであり、80年代が思い描いた銀河の民間航空というレトロフューチャーが本質。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/star-tours.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/star-tours.html" title="Star Tours showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <p class="exhibit-label"><span>汎用UIへの適用</span><i></i><a href="../previews/conformance/star-tours.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/720">
+    <iframe src="../previews/conformance/star-tours.html" loading="lazy" title="Star Tours conformance"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#0A1030;color:#fff">#0A1030</div><div class="tok">void</div></div><div class="chip-swatch"><div class="well" style="background:#1A2A6E;color:#fff">#1A2A6E</div><div class="tok">indigo</div></div><div class="chip-swatch"><div class="well" style="background:#3F7FFF;color:#fff">#3F7FFF</div><div class="tok">electric</div></div><div class="chip-swatch"><div class="well" style="background:#6FCFFF;color:#111">#6FCFFF</div><div class="tok">glow-cyan</div></div><div class="chip-swatch"><div class="well" style="background:#C9CFD8;color:#111">#C9CFD8</div><div class="tok">chrome</div></div><div class="chip-swatch"><div class="well" style="background:#E8562B;color:#fff">#E8562B</div><div class="tok">flip-orange</div></div><div class="chip-swatch"><div class="well" style="background:#F2A93C;color:#111">#F2A93C</div><div class="tok">gate-amber</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>brand</td><td>Michroma</td><td>1.4rem / 400</td></tr><tr><td>board</td><td>Share Tech Mono</td><td>0.95rem / 400</td></tr><tr><td>aurebesh</td><td>Aurebesh</td><td>0.9rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>none</td><td>0px</td></tr><tr><td>sm</td><td>4px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>sm</td><td>8px</td></tr><tr><td>md</td><td>14px</td></tr><tr><td>lg</td><td>24px</td></tr><tr><td>xl</td><td>38px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>Star Toursは、旅行会社スター・ツアーズ社の宇宙港パブリックUIである（アトラクション実機系テーマ）。出発案内板、ゲート誘導サイン、手荷物検査、安全ビデオ — 銀河の「民間航空」の様式であり、現実の空港サイネージの書式（DESTINATION / FLIGHT / TIME / STATUS / GATE）を銀河に翻訳したもの。</p>
+<p>大原則は <strong>「1980年代が思い描いた銀河の空港」</strong>。アトラクションの制作年代に由来するレトロフューチャー — 電飾の滲み、ブラウン管的なブルーム、ブラシメタルの筐体、面取りされた多角形フレーム — は劣化ではなく本質である。現代のフラットUIの精細さではなく、<strong>光る看板としての物質感</strong>で作る。</p>
+<p>wayfindingとの違い：あちらは銀河内在のオーレベッシュ単独標示。こちらは<strong>観光客のための二言語表示</strong>（英語とオーレベッシュの交互・併記）が許される唯一のテーマ — スター・ツアーズ社は「外の人」を銀河に迎える会社だから。</p>
+<h2>Colors</h2>
+<p>パレットは「濃紺の夜 ＋ 電飾ブルーの発光 ＋ クロームと限定アクセント」。</p>
+<ul>
+<li><strong>void (#0A1030) / indigo (#1A2A6E):</strong> 漆黒〜濃紺の地と、バーのグラデーション暗部。画面と看板は常に発光体として夜に浮かぶ。</li>
+<li><strong>electric (#3F7FFF):</strong> 電飾ブルー。バーのグラデーション明部、フレームの発光。この様式の主役。</li>
+<li><strong>glow-cyan (#6FCFFF):</strong> 発光文字・サインテキスト。electricより明るい光の色。</li>
+<li><strong>chrome (#C9CFD8):</strong> ブラシメタル。ロゴ、ベゼル、筐体。スペキュラハイライトを持つ唯一の「素材色」。</li>
+<li><strong>flip-orange (#E8562B):</strong> フリップボード・警告系の赤橙。対比アクセント。</li>
+<li><strong>gate-amber (#F2A93C):</strong> ゲート矢印・強調の琥珀。</li>
+</ul>
+<p>ブルー系が支配し、橙・琥珀は対比として限定使用。緑や紫は存在しない。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>二言語交互表示がブランドの核。</strong> 英語（幅広ブロック体）とオーレベッシュが交互に切り替わる、または上下に併記される。どちらかを省略しない。</li>
+<li><strong>オーレベッシュの代替</strong>: 実フォントが利用できない場合は省略せず、短い直線・対角線の線分をグリッド上に組んだ擬似グリフをSVGで生成して装飾に用いる（テキストの置換ではなく併記・装飾として）。 文言を追加・変更できない制約下では、見出しの直下に擬似グリフの装飾行を添えて二言語の体裁を保つ。</li>
+<li>英語はワイドなテクノサンセリフ（Michroma/Bank Gothic系）— 80年代SFのブロック体。</li>
+<li>案内板の中身は等幅で、<strong>列見出し＋行データの空港書式</strong>に整列する。</li>
+<li>フリップボード面ではドットマトリクス風に劣化してよい。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>空港のメタファーを忠実に。</strong> 出発案内板は5列（DESTINATION / FLIGHT / TIME / STATUS / GATE）、行は目的地ごとのグラデーションバー、左端に惑星のサムネイルディスク。</li>
+<li>サインは水平バーが基本単位。バーの端は矢印またはチャンファーで終端する。</li>
+<li>バー間にセグメント光柱（縦に積んだ発光セグメント）を区切りとして立てる。</li>
+<li>三角形（ロゴのモチーフ）が目的地プレビューやブランド表示のフレームとして反復する。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li>深度は<strong>筐体の物質</strong>で作る。ブラシメタルのベゼル、看板の厚み、埋め込みの奥行き。</li>
+<li>発光はブラウン管的な滲み（bloom）を伴う。特にフリップボードは走査線ノイズ必須。</li>
+<li>クロームのスペキュラ（鏡面ハイライト）がこの様式にだけ許された贅沢。</li>
+<li>画面内のドロップシャドウは存在しない — 影は現実の筐体が落とすもの。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>三角形がブランドモチーフ。</strong> ロゴ、目的地カード、装飾に一貫して現れる。</li>
+<li>面取りされたシャープな多角形フレーム（角丸ではなく短い斜めカット）— 80年代の「未来のハードウェア」。</li>
+<li>惑星サムネイルは正円のディスク。</li>
+<li>バーは横長で、グラデーション（indigo→electric）を持つ。端は矢印形かチャンファー。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>departure-board:</strong> 5列の出発案内板。行=グラデーションバー＋惑星ディスク＋等幅データ。英語版とオーレベッシュ版が交互に切り替わる。</li>
+<li><strong>gradient-bar:</strong> indigo→electricのグラデーション横バー。行・サインの基本単位。</li>
+<li><strong>triangle-frame:</strong> 三角形のフレーム。ブランド表示と目的地プレビュー用。</li>
+<li><strong>gate-sign:</strong> ゲート誘導。glow-cyanの文字＋gate-amberの矢印、二言語併記。</li>
+<li><strong>segment-column:</strong> 縦積みの発光セグメント柱。サイン間の区切り。</li>
+<li><strong>flip-board:</strong> 赤橙LEDのフリップボード。走査線ノイズ付き。レトロ側の端。</li>
+<li><strong>chrome-bezel:</strong> ブラシメタルの筐体・ベゼル。ロゴにも使う。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>空港サイネージの書式（5列、STATUS語彙、ゲート番号）を銀河語彙に翻訳して使う</li>
+<li>英語とオーレベッシュを常に対で扱う（交互切替か併記）</li>
+<li>電飾の滲み・ブラウン管のブルームを残す — レトロは劣化ではなく本質</li>
+<li>三角形モチーフとグラデーションバーを反復する</li>
+<li>クロームの物質感を要所に</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>現代のフラットデザイン・高精細タイポに寄せない</li>
+<li>二言語のどちらかを省略しない（単独表記は wayfinding の掟）</li>
+<li>緑・紫・多色相を持ち込まない</li>
+<li>角丸カードUIにしない — 面取り多角形の世界</li>
+<li>「光る看板」の物質感を失わない（画面はいつも筐体の中にある）</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/star-tours/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

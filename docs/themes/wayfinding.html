@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wayfinding — starwars-md</title>
+
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{
+  --t-bg:#0A0C14; --t-panel:#14161E; --t-ink:#EAF7F7;
+  --t-soft:#3FC8C8; --t-faint:#3FC8C8; --t-accent:#3FC8C8;
+  --t-accent-ink:#111; --t-line:#3FC8C8;
+  --t-rs:6px; --t-rl:6px;
+  --t-case:uppercase; --t-track:.18em;
+  --t-disp:sans-serif;
+  --t-mono:monospace;
+  color-scheme:dark;
+}</style>
+</head>
+<body class="tpage">
+<header class="tbar">
+  <div class="bar">
+    <a class="back" href="../index.html">← Gallery</a>
+    <span class="spacer"></span>
+    <a class="home" href="https://github.com/ShuzoCreate/sw-designsystem" target="_blank" rel="noopener">starwars-md ↗</a>
+  </div>
+</header>
+<main class="tmain">
+  <div class="thead">
+    <p class="tid">Screen 13 / 14</p>
+    <h1>Wayfinding</h1>
+    <p class="hook">銀河のオーレベッシュ・サイネージ</p>
+  </div>
+  <div class="tdesc"><p>コルサントの街頭ネオン、宇宙港や酒場のサイネージ、ガラス管文字の看板。スクリーンではなく、銀河の街に立つ標示の言語。オーレベッシュ単独表記。</p></div>
+  <p class="exhibit-label"><span>Showcase</span><i></i><a href="../previews/showcase/wayfinding.html" target="_blank" rel="noopener">フルサイズで開く ↗</a></p>
+  <div class="exhibit" style="aspect-ratio:1220/760">
+    <iframe src="../previews/showcase/wayfinding.html" title="Wayfinding showcase"></iframe>
+    <div class="fade"></div>
+  </div>
+  <section class="tspecs">
+    <div class="tbox">
+      <p class="tlabel">Colors</p>
+      <div class="chips"><div class="chip-swatch"><div class="well" style="background:#0A0C14;color:#fff">#0A0C14</div><div class="tok">night</div></div><div class="chip-swatch"><div class="well" style="background:#14161E;color:#fff">#14161E</div><div class="tok">panel-dark</div></div><div class="chip-swatch"><div class="well" style="background:#3FC8C8;color:#111">#3FC8C8</div><div class="tok">teal</div></div><div class="chip-swatch"><div class="well" style="background:#E040A0;color:#fff">#E040A0</div><div class="tok">ad-magenta</div></div><div class="chip-swatch"><div class="well" style="background:#F28A2B;color:#111">#F28A2B</div><div class="tok">ad-orange</div></div><div class="chip-swatch"><div class="well" style="background:#E8352A;color:#fff">#E8352A</div><div class="tok">neon-red</div></div><div class="chip-swatch"><div class="well" style="background:#7FD8F0;color:#111">#7FD8F0</div><div class="tok">neon-ice</div></div><div class="chip-swatch"><div class="well" style="background:#4CD97A;color:#111">#4CD97A</div><div class="tok">neon-green</div></div></div>
+    </div>
+    <div class="tside"><div class="tbox"><p class="tlabel">Typography</p><table class="tok"><tr><td>aurebesh-display</td><td>Aurebesh</td><td>1.6rem / 400</td></tr><tr><td>aurebesh-caption</td><td>Aurebesh</td><td>0.8rem / 400</td></tr></table></div><div class="tbox"><p class="tlabel">Rounded</p><table class="tok"><tr><td>plate</td><td>6px</td></tr><tr><td>neon-oval</td><td>999px</td></tr></table></div><div class="tbox"><p class="tlabel">Spacing</p><table class="tok"><tr><td>sm</td><td>8px</td></tr><tr><td>md</td><td>16px</td></tr><tr><td>lg</td><td>28px</td></tr></table></div></div>
+  </section>
+  <div class="tdoc-wrap">
+    <details class="tdoc">
+      <summary>DESIGN.md 全文</summary>
+      <article class="md-body"><h2>Overview</h2>
+<p>Wayfindingは、銀河の<strong>サイネージ</strong>の様式である — スクリーンUIではなく、物としての発光標示（非スクリーン系テーマ）。高架のオーバーヘッド標識、歓楽街の積層看板、食堂のガラス管ネオン。</p>
+<p>大原則は2つ。第一に <strong>「オーレベッシュ単独表記」</strong> — 銀河の標示は翻訳を添えない。読めない者のための併記は存在せず、文字そのものが風景である。第二に <strong>「場所の身分が色と形を決める」</strong> — 同じ発光文字が、レジスタ（用途階級）によってまったく違う顔になる。</p>
+<p>スクリーンUIとの境界線：<strong>情報が動的・映像的ならスクリーン系テーマの領分、静的な銘板・発光素材ならwayfinding</strong>。動く広告スクリーンはcoruscant-neonの範囲だったが、本テーマの商業レジスタに吸収する。</p>
+<h2>Colors</h2>
+<p>パレットは「夜の地 ＋ 3レジスタの発光」。</p>
+<ul>
+<li><strong>night (#0A0C14) / panel-dark (#14161E):</strong> 都市の夜と標示板の地。サイネージは常に暗さの中で光る。</li>
+<li><strong>teal (#3FC8C8):</strong> 機能レジスタの単色。方向標示・インフラ標識はこの一色＋矢印だけで完結する。</li>
+<li><strong>ad-magenta (#E040A0) / ad-orange (#F28A2B):</strong> 商業レジスタの高彩度。猥雑さが正しさであり、複数色相の同時使用も許される唯一のレジスタ。</li>
+<li><strong>neon-red (#E8352A) / neon-ice (#7FD8F0) / neon-green (#4CD97A):</strong> 庶民レジスタのガラス管ネオン。<strong>2色ペア</strong>（赤×水色、緑×赤）で使うのが definitive。</li>
+</ul>
+<p>レジスタを混ぜない。高架標識に商業の色数を持ち込んだ瞬間、身分の言語が壊れる。</p>
+<h2>Typography</h2>
+<ul>
+<li><strong>オーレベッシュのみ。ラテン文字の併記禁止。</strong> これがこの様式の最大の掟であり、作中の標示は一貫して翻訳を持たない。</li>
+<li>機能レジスタ: 端正な等間隔、単色発光、矢印と同格に扱う。</li>
+<li>商業レジスタ: 大きく、詰め気味に、重ねて。可読性より圧。</li>
+<li>庶民レジスタ: ガラス管の物理制約による丸みのある字形。二段書き（店名＋業種）が定番。</li>
+</ul>
+<h2>Layout</h2>
+<ul>
+<li><strong>標示は1メッセージ1枚。</strong> 文＋矢印、店名＋業種、それ以上を1枚に載せない。</li>
+<li>商業レジスタのみ<strong>積層</strong>する — 異なる色相の帯・画面を縦に積んだタワー（4段前後）。</li>
+<li>高架・壁面・建築と一体化して設置される。独立したポールサインは少ない。</li>
+<li>遠景では標示は都市の光のノイズになる。個の可読性より群の風景。</li>
+</ul>
+<h2>Elevation &amp; Depth</h2>
+<ul>
+<li>深度は<strong>筐体の物理</strong>。プレートの厚み、ガラス管の浮き、埋め込みの奥行き。</li>
+<li>発光は素材由来 — LEDバンドの均一光、ガラス管の芯のある光、スクリーンのバックライト。それぞれ滲み方が違う。</li>
+<li>商業レジスタのみブルーム強め。機能レジスタは滲まない。</li>
+</ul>
+<h2>Shapes</h2>
+<ul>
+<li><strong>プレート</strong>（機能）: 暗い矩形板、控えめな角丸、太い三角矢印。</li>
+<li><strong>積層バンド</strong>（商業）: 段ごとに色相の違う横帯タワー。</li>
+<li><strong>楕円フレーム</strong>（庶民）: ガラス管ネオンの定番外形。二重楕円＋二段書き。</li>
+<li>矢印はチャンキーな三角形。細い洗練された矢印は使わない。</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><strong>register:</strong> functional / commercial / vernacular の3用途階級。設置場所の身分で選ぶ。</li>
+<li><strong>overhead-plate:</strong> 高架・天井の方向標示。panel-darkの地＋teal単色＋矢印必須。</li>
+<li><strong>stacked-band:</strong> 商業の積層看板。段ごとの色相変更を許可。</li>
+<li><strong>tube-neon:</strong> ガラス管ネオン。楕円フレーム、2色ペア、二段書き。</li>
+<li><strong>arrow-glyph:</strong> 太い三角矢印。方向情報の主役。</li>
+</ul>
+<h2>Do&#x27;s and Don&#x27;ts</h2>
+<p><strong>Do:</strong></p>
+<ul>
+<li>オーレベッシュ単独で書く</li>
+<li>レジスタを設置場所の身分で選び、混ぜない</li>
+<li>1枚1メッセージを守る</li>
+<li>発光の質を素材（LED／ガラス管／スクリーン）で描き分ける</li>
+<li>矢印を文字と同格に扱う</li>
+</ul>
+<p><strong>Don&#x27;t:</strong></p>
+<ul>
+<li>ラテン文字を併記しない（それをやるのはstar-toursだけ — あれは観光客向けの例外）</li>
+<li>機能標示に2色相以上を使わない</li>
+<li>動的・映像的な表示を持ち込まない（それはスクリーン系テーマの領分）</li>
+<li>細く上品な矢印・繊細な罫線を使わない</li>
+<li>標示を情報で満載にしない</li>
+</ul></article>
+    </details>
+    <a class="gh" href="https://github.com/ShuzoCreate/sw-designsystem/blob/main/themes/wayfinding/DESIGN.md" target="_blank" rel="noopener">DESIGN.md on GitHub ↗</a>
+  </div>
+</main>
+<script>(() => {
+/* scale embedded 1220px-wide showcases to their cell width */
+const SRC_W = 1220;
+function fit(){
+  document.querySelectorAll('.view iframe, .exhibit iframe').forEach(f => {
+    const w = f.parentElement.clientWidth;
+    if (w > 0) f.style.transform = 'scale(' + (w / SRC_W) + ')';
+  });
+}
+new ResizeObserver(fit).observe(document.documentElement);
+addEventListener('load', fit);
+fit();
+})();</script>
+</body>
+</html>

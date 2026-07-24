@@ -1,0 +1,271 @@
+<title>Wayfinding — theme preview</title>
+<style>
+:root{
+  /* themes/wayfinding/DESIGN.md tokens */
+  --night:#0A0C14;
+  --panel-dark:#14161E;
+  --teal:#3FC8C8;
+  --ad-magenta:#E040A0;
+  --ad-orange:#F28A2B;
+  --neon-red:#E8352A;
+  --neon-ice:#7FD8F0;
+  --neon-green:#4CD97A;
+  --r-plate:6px;
+  --r-oval:999px;
+  --sm:8px;--md:16px;--lg:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{color-scheme:dark}
+body{
+  position:relative;
+  background:var(--night);
+  min-height:960px;
+  overflow:hidden;
+  padding:40px 16px 30px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--lg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+/* ============ distant city — faint point lights ============ */
+#skyline{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+}
+#skyline svg{width:100%;height:100%;display:block}
+
+.stack{position:relative;z-index:1;width:100%;max-width:920px;display:flex;flex-direction:column;gap:var(--lg);align-items:center}
+
+/* ============================================================
+   Register 1 — functional : overhead-plate
+   panel-dark plate, teal single hue, chunky arrow, no bloom
+   ============================================================ */
+.overhead-plate{
+  width:100%;
+  background:var(--panel-dark);
+  border-radius:var(--r-plate);
+  border:1px solid #24273180;
+  padding:22px 34px;
+  display:flex;align-items:center;gap:30px;
+  position:relative;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04),
+    0 10px 22px rgba(0,0,0,.55);
+}
+.overhead-plate::before{ /* uniform LED rim along the top edge */
+  content:"";position:absolute;left:16px;right:16px;top:0;height:2px;
+  background:linear-gradient(90deg,transparent,rgba(63,200,200,.55),transparent);
+}
+.overhead-plate .arrow{flex:0 0 auto;display:block}
+.overhead-plate .aur-col{display:flex;flex-direction:column;gap:10px}
+
+/* ============================================================
+   Register 2 — commercial : stacked-band
+   multi-tier tower, hue-per-band, heavy bloom, packed glyphs
+   ============================================================ */
+.stacked-tower{
+  width:100%;max-width:640px;
+  background:#050608;
+  border:3px solid #000;
+  border-radius:4px;
+  padding:10px;
+  display:flex;flex-direction:column;gap:10px;
+  box-shadow:0 14px 34px rgba(0,0,0,.6);
+}
+.tier{
+  position:relative;
+  height:78px;
+  border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  isolation:isolate;
+  border:1px solid #000;
+  box-shadow:0 0 0 1px rgba(255,255,255,.05) inset, 0 4px 10px rgba(0,0,0,.5);
+}
+.tier .backdrop{position:absolute;inset:0;z-index:0}
+.tier .aur{position:relative;z-index:1}
+.tier.hue-magenta .backdrop{
+  background:radial-gradient(120% 160% at 50% 30%, #FF7FC655, transparent 65%),
+             linear-gradient(160deg,#6E1049,#B02076 55%,#57103C);
+}
+.tier.hue-orange .backdrop{
+  background:radial-gradient(120% 160% at 50% 30%, #FFC26E55, transparent 65%),
+             linear-gradient(160deg,#7A3D08,#C06410 55%,#5E2F06);
+}
+
+/* ============================================================
+   Register 3 — vernacular : tube-neon
+   double oval glass tube frame, two-colour pair, two-line text
+   ============================================================ */
+.tube-neon{
+  position:relative;
+  padding:34px 46px;
+  display:flex;align-items:center;justify-content:center;
+}
+.tube-neon svg.frame{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.tube-text{position:relative;display:flex;flex-direction:column;align-items:center;gap:12px;z-index:1}
+
+footer{font-size:.56rem;letter-spacing:.2em;color:#3a3f52;text-align:center}
+</style>
+
+<body>
+<div id="skyline"></div>
+
+<div class="stack">
+
+  <!-- ===== register: functional — overhead-plate ===== -->
+  <div class="overhead-plate">
+    <span class="arrow" id="arrow-functional"></span>
+    <span class="aur-col">
+      <span class="aur" data-register="functional" data-n="9" data-seed="512" data-h="30" data-w="20" data-color="var(--teal)"></span>
+    </span>
+  </div>
+
+  <!-- ===== register: commercial — stacked-band ===== -->
+  <div class="stacked-tower">
+    <div class="tier hue-magenta"><div class="backdrop"></div>
+      <span class="aur" data-register="commercial" data-n="7" data-seed="71" data-h="54" data-w="36" data-color="var(--ad-magenta)"></span>
+    </div>
+    <div class="tier hue-orange"><div class="backdrop"></div>
+      <span class="aur" data-register="commercial" data-n="8" data-seed="203" data-h="50" data-w="33" data-color="var(--ad-orange)"></span>
+    </div>
+    <div class="tier hue-magenta"><div class="backdrop"></div>
+      <span class="aur" data-register="commercial" data-n="6" data-seed="88" data-h="56" data-w="40" data-color="var(--ad-magenta)"></span>
+    </div>
+    <div class="tier hue-orange"><div class="backdrop"></div>
+      <span class="aur" data-register="commercial" data-n="9" data-seed="915" data-h="48" data-w="30" data-color="var(--ad-orange)"></span>
+    </div>
+  </div>
+
+  <!-- ===== register: vernacular — tube-neon ===== -->
+  <div class="tube-neon" id="tube-neon">
+    <div class="tube-text">
+      <span class="aur" data-register="vernacular" data-n="6" data-seed="333" data-h="26" data-w="18" data-color="var(--neon-red)" data-round="1"></span>
+      <span class="aur" data-register="vernacular" data-n="8" data-seed="654" data-h="17" data-w="12" data-color="var(--neon-ice)" data-round="1"></span>
+    </div>
+  </div>
+
+</div>
+
+<footer>themes/wayfinding/DESIGN.md verification sample — tokens only</footer>
+
+<script>
+(() => {
+/* ---------------------------------------------------------------
+   pseudo-aurebesh glyph runs
+   register-aware: functional = crisp square strokes, no bloom
+                   commercial = bold, packed, heavy bloom
+                   vernacular = rounded glass-tube strokes, core bloom
+   --------------------------------------------------------------- */
+function aurebesh(n,sd,h,gw,color,round,register){
+  let s2=sd;const r=()=>(s2=(s2*16807)%2147483647)/2147483647;
+  const gap=Math.max(3,Math.round(gw*(register==='commercial'?0.22:0.4)));
+  const sw = register==='commercial' ? Math.max(2.6,h/6.4) : (round? Math.max(2.2,h/7.2) : Math.max(1.6,h/9));
+  const W = n*(gw+gap);
+  let s=`<svg width="${W}" height="${h+4}" viewBox="0 0 ${W} ${h+4}" aria-hidden="true">`;
+  const pts=(x)=>[[x,2],[x+gw,2],[x,h+2],[x+gw,h+2],[x+gw/2,2],[x+gw/2,h+2],[x,h/2+2],[x+gw,h/2+2],[x+gw*0.25,h/2+2],[x+gw*0.75,h/2+2]];
+  for(let i=0;i<n;i++){
+    const x=i*(gw+gap);
+    const P=pts(x);
+    const k=2+Math.floor(r()*3);
+    for(let j=0;j<k;j++){
+      const a=P[Math.floor(r()*P.length)];let b=P[Math.floor(r()*P.length)];
+      if(a===b)b=P[(P.indexOf(a)+4)%P.length];
+      if(round){
+        const mx=(a[0]+b[0])/2 + (r()-0.5)*gw*0.5;
+        const my=(a[1]+b[1])/2 + (r()-0.5)*h*0.25;
+        s+=`<path d="M${a[0]} ${a[1]} Q${mx} ${my} ${b[0]} ${b[1]}" stroke="${color}" stroke-width="${sw}" fill="none" stroke-linecap="round" opacity=".95"/>`;
+      } else {
+        s+=`<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" stroke="${color}" stroke-width="${sw}" opacity=".95" stroke-linecap="${register==='commercial'?'round':'square'}"/>`;
+      }
+    }
+    /* small fixed anchor dot at each glyph's base — common aurebesh trait */
+    s+=`<circle cx="${x+gw/2}" cy="${h+1.5}" r="${sw*0.55}" fill="${color}" opacity=".9"/>`;
+  }
+  return s+'</svg>';
+}
+
+document.querySelectorAll('.aur').forEach(el=>{
+  const register=el.dataset.register;
+  const svg=aurebesh(
+    +el.dataset.n||6, +el.dataset.seed||11, +el.dataset.h||16, +el.dataset.w||12,
+    el.dataset.color||'#fff', el.dataset.round==='1', register
+  );
+  el.innerHTML=svg;
+  if(register==='commercial'){
+    el.style.filter='drop-shadow(0 0 7px currentColor)';
+    el.querySelectorAll('svg').forEach(s=>s.style.filter=`drop-shadow(0 0 10px ${el.dataset.color}) drop-shadow(0 0 22px ${el.dataset.color})`);
+  } else if(register==='vernacular'){
+    el.querySelectorAll('svg').forEach(s=>s.style.filter=`drop-shadow(0 0 3px ${el.dataset.color}) drop-shadow(0 0 9px ${el.dataset.color})`);
+  }
+  /* functional: no filter at all — LED plates do not bloom */
+});
+
+/* ---------------------------------------------------------------
+   arrow-glyph — chunky triangular arrow, functional register only
+   --------------------------------------------------------------- */
+document.getElementById('arrow-functional').innerHTML = `
+<svg width="54" height="46" viewBox="0 0 54 46">
+  <polygon points="0,6 26,6 26,0 54,23 26,46 26,40 0,40" fill="#3FC8C8"/>
+</svg>`;
+
+/* ---------------------------------------------------------------
+   tube-neon frame — double oval glass tube, two-colour pair,
+   each ring drawn with a base stroke + a short bright highlight
+   arc along the glass to read as a lit tube rather than a line
+   --------------------------------------------------------------- */
+(() => {
+  const host = document.getElementById('tube-neon');
+  const w = host.clientWidth || 460, h = host.clientHeight || 180;
+  const outerRx = w/2 - 6, outerRy = h/2 - 6;
+  const innerRx = outerRx - 18, innerRy = outerRy - 16;
+  const cx = w/2, cy = h/2;
+  const ring = (rx,ry,color,sw)=>`
+    <ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none"
+      stroke="${color}" stroke-width="${sw}" opacity=".95"/>
+    <ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none"
+      stroke="#FFFFFF" stroke-width="${sw*0.32}" opacity=".55"
+      stroke-dasharray="${Math.PI*(rx+ry)*0.22} ${Math.PI*(rx+ry)*2}"
+      stroke-dashoffset="${-Math.PI*(rx+ry)*0.62}" stroke-linecap="round"/>`;
+  const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.setAttribute('class','frame');
+  svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
+  svg.innerHTML = `
+    <defs>
+      <filter id="tubeglow" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="4.5" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <g filter="url(#tubeglow)">
+      ${ring(outerRx,outerRy,'var(--neon-red)',5)}
+      ${ring(innerRx,innerRy,'var(--neon-ice)',4)}
+    </g>`;
+  host.prepend(svg);
+})();
+
+/* ---------------------------------------------------------------
+   skyline — faint distant point-lights behind the wall
+   --------------------------------------------------------------- */
+(() => {
+  let s2=4051;const r=()=>(s2=(s2*16807)%2147483647)/2147483647;
+  const W=1400,H=1000;
+  const cols=['#DCE7FF','#FFE3B0','#B7F0E6','#FFFFFF'];
+  let dots='';
+  for(let i=0;i<260;i++){
+    const x=r()*W, y=r()*H*0.82;
+    const rad=0.5+r()*1.4;
+    const op=0.06+r()*0.22;
+    const c=cols[Math.floor(r()*cols.length)];
+    dots+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rad.toFixed(2)}" fill="${c}" opacity="${op.toFixed(2)}"/>`;
+  }
+  /* a few faint vertical building-edge hints, very low opacity */
+  let lines='';
+  for(let i=0;i<10;i++){
+    const x=r()*W, y0=r()*H*0.5, len=80+r()*260;
+    lines+=`<rect x="${x.toFixed(1)}" y="${y0.toFixed(1)}" width="${(1+r()*2).toFixed(1)}" height="${len.toFixed(1)}" fill="#0F1522" opacity="${(0.3+r()*0.3).toFixed(2)}"/>`;
+  }
+  document.getElementById('skyline').innerHTML =
+    `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">${lines}${dots}</svg>`;
+})();
+})();
+</script>
+</content>
