@@ -32,7 +32,7 @@ themes/nubian/DESIGN.md    → ナブー王室船のエレガント様式で実�
 | [Star Tours](themes/star-tours/DESIGN.md) | 80年代が描いた銀河民間航空 |
 | [Medcenter](themes/medcenter/DESIGN.md) | 暗闇に浮かぶガラスの円環 |
 | [Podracer](themes/podracer/DESIGN.md) | アウター・リムの即興計器 |
-| [HoloNet Aurek](themes/holonet-aurek/DESIGN.md) | 原液 — 単色相の多重フレーム |
+| [HoloNet Aurek](themes/holonet-aurek/DESIGN.md) | 銀河標準の、最も濃い姿 |
 | [Sith Order](themes/sith-order/DESIGN.md) | 暗闇に走るひとつの光の傷 |
 | [Wayfinding](themes/wayfinding/DESIGN.md) | 銀河のオーレベッシュ・サイネージ |
 | [Visor](themes/visor/DESIGN.md) | 視界そのものが計器 |
