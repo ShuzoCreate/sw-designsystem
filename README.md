@@ -1,4 +1,4 @@
-# starwars-md — screen languages of a galaxy
+# starwars-design-md — screen languages of a galaxy
 
 スター・ウォーズ**作中に登場するスクリーンUI**のヴィジュアルを再現する、テーマ別 DESIGN.md 集。
 
