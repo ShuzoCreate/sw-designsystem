@@ -22,20 +22,20 @@ themes/nubian/DESIGN.md    → ナブー王室船のエレガント様式で実�
 
 | テーマ | 概要 |
 |---|---|
-| [HoloNet](themes/holonet/DESIGN.md) | 銀河のどこでも通じる標準様式 |
-| [HoloNet Aurek](themes/holonet-aurek/DESIGN.md) | その標準様式の、最も濃い姿 |
-| [Star Tours](themes/star-tours/DESIGN.md) | 80年代が描いた銀河民間航空 |
-| [Kuat-Sienar](themes/kuat-sienar/DESIGN.md) | 軍需メーカーが納めた艦載計器 |
-| [Nubian](themes/nubian/DESIGN.md) | ナブー王家だけの例外的な様式 |
-| [High Republic Jedi Order](themes/high-republic-jedi-order/DESIGN.md) | 寺院と灯台 — 光は公共物 |
-| [Vectorscope](themes/vectorscope/DESIGN.md) | 誰も設計していない無銘の計器 |
-| [Medcenter](themes/medcenter/DESIGN.md) | 患者が主役、画面は衛星 |
-| [First Order](themes/firstorder/DESIGN.md) | 帝国美学を受け継ぐ艦内管制 |
-| [ISB](themes/isb/DESIGN.md) | 監視官僚の静かな道具 |
-| [Podracer](themes/podracer/DESIGN.md) | アウター・リムの即興計器 |
-| [Sith Order](themes/sith-order/DESIGN.md) | 設計者のいない遺物の系譜 |
-| [Wayfinding](themes/wayfinding/DESIGN.md) | 銀河の街角に立つサイネージ |
-| [Visor](themes/visor/DESIGN.md) | 視界に重なる光学HUD |
+| [HoloNet](themes/holonet/DESIGN.md) | 銀河全域で使われる標準様式 |
+| [HoloNet Aurek](themes/holonet-aurek/DESIGN.md) | holonetの装飾密度を高めた変種 |
+| [Star Tours](themes/star-tours/DESIGN.md) | スター・ツアーズ宇宙港の案内表示 |
+| [Kuat-Sienar](themes/kuat-sienar/DESIGN.md) | 帝国艦隊の艦載管制画面 |
+| [Nubian](themes/nubian/DESIGN.md) | ナブー王室船のコックピット計器 |
+| [High Republic Jedi Order](themes/high-republic-jedi-order/DESIGN.md) | ハイ・リパブリック期ジェダイ聖堂の意匠 |
+| [Vectorscope](themes/vectorscope/DESIGN.md) | オリジナル・トリロジー期のCRT計器 |
+| [Medcenter](themes/medcenter/DESIGN.md) | 医療施設の生体モニタ |
+| [First Order](themes/firstorder/DESIGN.md) | ファースト・オーダーの艦内画面 |
+| [ISB](themes/isb/DESIGN.md) | 帝国保安局の監視端末 |
+| [Podracer](themes/podracer/DESIGN.md) | ポッドレーサーの寄せ集め計器 |
+| [Sith Order](themes/sith-order/DESIGN.md) | シス教団の神殿と遺物 |
+| [Wayfinding](themes/wayfinding/DESIGN.md) | 銀河の街頭サイネージ |
+| [Visor](themes/visor/DESIGN.md) | バイザーや双眼鏡の光学HUD |
 
 ## 構成
 
