@@ -22,20 +22,20 @@ themes/nubian/DESIGN.md    → ナブー王室船のエレガント様式で実�
 
 | テーマ | 概要 |
 |---|---|
-| [HoloNet](themes/holonet/DESIGN.md) | 銀河標準のダーク×ネオン |
-| [Nubian](themes/nubian/DESIGN.md) | 銀河唯一のエレガント |
-| [First Order](themes/firstorder/DESIGN.md) | 黒曜ガラスと血赤の線 |
-| [High Republic Jedi Order](themes/high-republic-jedi-order/DESIGN.md) | 白と金、寺院と灯台 |
-| [Vectorscope](themes/vectorscope/DESIGN.md) | 無銘の単色ベクターCRT |
-| [ISB](themes/isb/DESIGN.md) | 監視官僚の骨白と炭黒 |
-| [Kuat-Sienar](themes/kuat-sienar/DESIGN.md) | 帝国艦隊の単色管制 |
+| [HoloNet](themes/holonet/DESIGN.md) | 銀河のどこでも通じる標準様式 |
+| [HoloNet Aurek](themes/holonet-aurek/DESIGN.md) | その標準様式の、最も濃い姿 |
 | [Star Tours](themes/star-tours/DESIGN.md) | 80年代が描いた銀河民間航空 |
-| [Medcenter](themes/medcenter/DESIGN.md) | 暗闇に浮かぶガラスの円環 |
+| [Kuat-Sienar](themes/kuat-sienar/DESIGN.md) | 軍需メーカーが納めた艦載計器 |
+| [Nubian](themes/nubian/DESIGN.md) | ナブー王家だけの例外的な様式 |
+| [High Republic Jedi Order](themes/high-republic-jedi-order/DESIGN.md) | 寺院と灯台 — 光は公共物 |
+| [Vectorscope](themes/vectorscope/DESIGN.md) | 誰も設計していない無銘の計器 |
+| [Medcenter](themes/medcenter/DESIGN.md) | 患者が主役、画面は衛星 |
+| [First Order](themes/firstorder/DESIGN.md) | 帝国美学を受け継ぐ艦内管制 |
+| [ISB](themes/isb/DESIGN.md) | 監視官僚の静かな道具 |
 | [Podracer](themes/podracer/DESIGN.md) | アウター・リムの即興計器 |
-| [HoloNet Aurek](themes/holonet-aurek/DESIGN.md) | 銀河標準の、最も濃い姿 |
-| [Sith Order](themes/sith-order/DESIGN.md) | 暗闇に走るひとつの光の傷 |
-| [Wayfinding](themes/wayfinding/DESIGN.md) | 銀河のオーレベッシュ・サイネージ |
-| [Visor](themes/visor/DESIGN.md) | 視界そのものが計器 |
+| [Sith Order](themes/sith-order/DESIGN.md) | 設計者のいない遺物の系譜 |
+| [Wayfinding](themes/wayfinding/DESIGN.md) | 銀河の街角に立つサイネージ |
+| [Visor](themes/visor/DESIGN.md) | 視界に重なる光学HUD |
 
 ## 構成
 

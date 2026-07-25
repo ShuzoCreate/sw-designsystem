@@ -3,14 +3,21 @@
 
 :root{
   --bg:#04070D; --surface:#0A1420; --primary:#5BD8FF; --line:#2E7BFF;
-  --text:#D8F4FF; --muted:#1B3A55; --muted-ink:#4A90D9; --affirm:#3BE86A;
+  --text:#D8F4FF; --muted:#1B3A55; --muted-ink:#7FA9DC; --affirm:#3BE86A;
   --disp:'Michroma','Orbitron',sans-serif;
   --mono:'Share Tech Mono',monospace;
   --body:'Hiragino Sans','Noto Sans JP','Yu Gothic',-apple-system,sans-serif;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-body{margin:0; background:var(--bg); color:var(--text); font-family:var(--body); font-size:15px; line-height:1.7}
+body{
+  margin:0; color:var(--text); font-family:var(--body); font-size:15px; line-height:1.7;
+  background:
+    radial-gradient(1100px 520px at 72% -8%, rgba(46,123,255,.10), transparent 62%),
+    repeating-linear-gradient(0deg, rgba(91,216,255,.028) 0 1px, transparent 1px 44px),
+    repeating-linear-gradient(90deg, rgba(91,216,255,.02) 0 1px, transparent 1px 44px),
+    var(--bg);
+}
 a{color:var(--primary)}
 
 /* chamfered line-panel: outer = stroke color clipped, inner = fill clipped */
@@ -20,7 +27,7 @@ a{color:var(--primary)}
   clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px)}
 
 /* ---- header ---- */
-header.site{border-bottom:1px solid rgba(46,123,255,.5); background:rgba(10,20,32,.75)}
+header.site{border-bottom:1px solid rgba(91,216,255,.4); background:linear-gradient(180deg, rgba(14,27,58,.85), rgba(8,16,32,.65))}
 header.site .bar{max-width:1560px; margin:0 auto; padding:16px 26px; display:flex; align-items:center; gap:20px}
 .mark{display:flex; align-items:baseline; gap:14px; text-decoration:none}
 .mark .latin{font-family:var(--disp); font-size:.94rem; letter-spacing:.2em; text-transform:uppercase; color:var(--text); text-shadow:0 0 14px rgba(91,216,255,.55)}
@@ -42,17 +49,17 @@ header.site .spacer{flex:1}
 .lead p a{color:var(--primary)}
 .ticks{height:9px; margin:20px 0 26px; background:repeating-linear-gradient(90deg, var(--muted) 0 1px, transparent 1px 13px)}
 
-/* ---- the wall: fluid masonry ---- */
-.wall{column-count:3; column-gap:24px; padding-bottom:80px}
-@media (max-width:1180px){.wall{column-count:2}}
-@media (max-width:740px){.wall{column-count:1}}
+/* ---- the wall: row-major masonry (server-rendered columns, JS re-flows on breakpoint) ---- */
+.wall{display:flex; gap:24px; padding-bottom:80px; align-items:flex-start}
+.wcol{flex:1; min-width:0; display:flex; flex-direction:column; gap:24px}
 .tile{
-  display:block; width:100%; margin:0 0 24px; break-inside:avoid; text-decoration:none; color:inherit;
-  background:rgba(46,123,255,.55); padding:1.5px;
+  display:block; width:100%; margin:0; text-decoration:none; color:inherit;
+  background:rgba(74,138,255,.6); padding:1.5px;
   clip-path:polygon(15px 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,0 100%,0 15px);
   transition:background .15s ease, filter .15s ease;
+  filter:drop-shadow(0 0 8px rgba(46,123,255,.18));
 }
-.tile:hover{background:var(--primary); filter:drop-shadow(0 0 14px rgba(91,216,255,.5))}
+.tile:hover{background:var(--primary); filter:drop-shadow(0 0 16px rgba(91,216,255,.5))}
 .tile .fin{display:block; background:#000;
   clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px)}
 .tile .view{display:block; width:100%; overflow:hidden; position:relative; background:#000}
@@ -60,11 +67,15 @@ header.site .spacer{flex:1}
   width:1220px; height:1900px; border:0; display:block; pointer-events:none;
   transform:scale(.38); transform-origin:top left;
 }
-.tile .cap{border-top:1px solid rgba(46,123,255,.5); background:rgba(14,27,58,.72); padding:10px 16px 11px}
+.tile .cap{
+  border-top:1px solid rgba(91,216,255,.45); padding:10px 16px 11px;
+  background:linear-gradient(180deg, #0E1D3C, #091430);
+  background-image:repeating-linear-gradient(0deg, rgba(255,255,255,.025) 0 1px, transparent 1px 4px), linear-gradient(180deg, #0E1D3C, #091430);
+}
 .tile .cap .row{display:flex; align-items:baseline; gap:12px}
 .tile .cap .id{font-family:var(--mono); font-size:.66rem; color:var(--primary); letter-spacing:.08em}
-.tile .cap .name{font-family:var(--disp); font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:var(--text)}
-.tile .cap .hook{margin-top:4px; font-size:.7rem; color:var(--muted-ink); letter-spacing:.03em}
+.tile .cap .name{font-family:var(--disp); font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:#EAF6FF}
+.tile .cap .hook{margin-top:4px; font-size:.7rem; color:var(--muted-ink); letter-spacing:.03em; opacity:.9}
 
 /* ---- footer ---- */
 footer.site{border-top:1px solid rgba(46,123,255,.35); padding:20px 26px 34px}
